@@ -1,0 +1,42 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║    🦈  SHARK0LOCKER - DEMO MODE  🦈                          ║
+║                                                               ║
+║      ✅ FULLY FUNCTIONAL - SIMULATED TRADING ✅               ║
+║         (No real money - Safe to test)                       ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+        
+2025-10-15 13:05:18,736 - __main__ - INFO - Starting shark0locker in DEMO mode...
+📝 DEMO MODE:
+   - All Telegram commands work
+   - Trading is simulated (no real money)
+   - Perfect for testing and learning
+   - Starting balance: $1,000 (virtual)
+
+2025-10-15 13:05:18,736 - __main__ - INFO - Initializing trading system...
+2025-10-15 13:05:18,736 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 13:05:18,736 - __main__ - ERROR - Fatal error: MockTradeLockerClient.__init__() got an unexpected keyword argument 'api_url'
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_demo.py", line 157, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 54, in initialize
+    self.api_client = TradeLockerClient(
+                      ~~~~~~~~~~~~~~~~~^
+        email=self.config.tradelocker.email,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        api_url=self.config.tradelocker.api_url
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: MockTradeLockerClient.__init__() got an unexpected keyword argument 'api_url'
+2025-10-15 13:05:18,737 - __main__ - INFO - Cleaning up...
+2025-10-15 13:05:18,737 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:18,737 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:18,737 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 13:05:18,737 - __main__ - INFO - Trading system shut down
+2025-10-15 13:05:18,737 - __main__ - INFO - ✅ Shutdown complete
+
+✅ shark0locker DEMO stopped

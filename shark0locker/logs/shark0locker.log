@@ -1,0 +1,1183 @@
+2025-10-15 11:33:10,208 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:10,211 - __main__ - ERROR - Fatal error: attempted relative import beyond top-level package
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 54, in main
+    from core.trading_system import TradingSystem
+  File "/workspace/shark0locker/core/trading_system.py", line 11, in <module>
+    from ..api.tradelocker_client import TradeLockerClient
+ImportError: attempted relative import beyond top-level package
+2025-10-15 11:33:10,212 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:10,212 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:33:26,573 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:26,884 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:33:26,884 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:33:27,710 - api.tradelocker_client - ERROR - Authentication failed: 
+2025-10-15 11:33:27,710 - api.tradelocker_client - ERROR - Authentication error: Auth failed: 
+2025-10-15 11:33:27,710 - __main__ - ERROR - Fatal error: Auth failed: 
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 61, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 62, in initialize
+    await self.api_client.connect()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 40, in connect
+    await self.authenticate()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 69, in authenticate
+    raise Exception(f"Auth failed: {error}")
+Exception: Auth failed: 
+2025-10-15 11:33:27,711 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:27,711 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:27,712 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:27,712 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:33:27,712 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:33:27,712 - __main__ - INFO - Trading system shut down
+2025-10-15 11:33:27,712 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:33:50,406 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:50,636 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:33:50,636 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:33:50,636 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://api.tradelocker.com/auth/jwt/token
+2025-10-15 11:33:50,636 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:33:51,367 - api.tradelocker_client - INFO - Authentication response status: 404
+2025-10-15 11:33:51,367 - api.tradelocker_client - INFO - Authentication response: 
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Authentication failed with status 404
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Response: 
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Authentication error: Auth failed (HTTP 404): 
+2025-10-15 11:33:51,367 - __main__ - ERROR - Fatal error: Auth failed (HTTP 404): 
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 61, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 62, in initialize
+    await self.api_client.connect()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 40, in connect
+    await self.authenticate()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 76, in authenticate
+    raise Exception(f"Auth failed (HTTP {response.status}): {response_text[:200]}")
+Exception: Auth failed (HTTP 404): 
+2025-10-15 11:33:51,369 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:51,369 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:51,369 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:51,369 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:33:51,369 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:33:51,369 - __main__ - INFO - Trading system shut down
+2025-10-15 11:33:51,369 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:34:38,184 - __main__ - INFO - Starting shark0locker in DEMO mode...
+2025-10-15 11:34:38,184 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:34:38,184 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:34:38,184 - __main__ - INFO - [DEMO MODE] Connected to mock TradeLocker - Account: 1550788
+2025-10-15 11:34:38,285 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
+2025-10-15 11:34:38,285 - __main__ - INFO - ✅ Trading system initialized (DEMO MODE)
+2025-10-15 11:34:38,285 - __main__ - INFO - Starting Telegram bot...
+2025-10-15 11:34:38,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 11:34:38,844 - telegram.ext.Application - INFO - Application started
+2025-10-15 11:34:39,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 11:34:39,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:34:39,648 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
+2025-10-15 11:34:39,648 - __main__ - INFO - ✅ Telegram bot started
+2025-10-15 11:34:49,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:34:55,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:01,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 Starting shark0locker trading system... 🦈
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-3 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-3 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-4 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-5 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent PerformanceMonitor started
+2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 shark0locker is HUNTING! 🦈
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-1 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-2 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-3 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-1 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-2 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-3 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-4 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-5 ready for analysis
+2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-1 ready to execute
+2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-2 ready to execute
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - PerformanceMonitor monitoring performance
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Initial balance: $1000.00
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:01,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:35:06,027 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:11,028 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:11,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:16,029 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:21,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:21,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:26,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:31,031 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:31,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:36,034 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:41,036 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:41,677 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:46,038 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:51,039 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:51,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:56,041 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:01,042 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:02,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:06,043 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:11,044 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:12,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:16,045 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:21,046 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:22,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:26,047 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:31,048 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:32,491 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:36,049 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:41,050 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:42,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:46,051 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:51,052 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:52,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:56,054 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:01,055 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:02,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:06,056 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:11,057 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:13,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:16,058 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:21,059 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:23,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:26,061 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:31,062 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:33,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:36,062 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:41,064 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:43,629 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:46,065 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:51,065 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:53,791 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:56,066 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:01,068 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:03,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:06,069 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:11,070 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:14,115 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:16,073 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:21,073 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:24,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:26,074 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:31,076 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:34,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:36,076 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:41,077 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:44,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:46,077 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:51,078 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:54,768 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:56,080 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:39:01,081 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:39:04,930 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:39:06,082 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:39:11,083 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:39:12,732 - __main__ - INFO - Received signal 2
+2025-10-15 11:39:12,733 - __main__ - INFO - 🛑 Initiating shutdown...
+2025-10-15 11:39:12,733 - __main__ - INFO - Cleaning up...
+2025-10-15 11:39:12,733 - core.trading_system - INFO - 🛑 Stopping shark0locker trading system... 🛑
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Scanner-1 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Scanner-2 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Scanner-3 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-1 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-2 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-3 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-4 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-5 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Executor-1 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Executor-2 stopped
+2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent PerformanceMonitor stopped
+2025-10-15 11:39:12,733 - __main__ - INFO - [DEMO MODE] Closed 0 positions
+2025-10-15 11:39:12,734 - core.trading_system - INFO - 🛑 shark0locker stopped 🛑
+2025-10-15 11:39:12,734 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:39:12,734 - __main__ - INFO - [DEMO MODE] Disconnected
+2025-10-15 11:39:12,734 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:39:12,734 - __main__ - INFO - Trading system shut down
+2025-10-15 11:39:13,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:39:13,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:39:13,878 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-10-15 11:39:13,878 - telegram.ext.Application - INFO - Application.stop() complete
+2025-10-15 11:39:13,878 - utils.telegram_bot - INFO - Telegram bot stopped
+2025-10-15 11:39:13,878 - __main__ - INFO - Telegram bot stopped
+2025-10-15 11:39:13,878 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:39:15,942 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:39:16,270 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:39:16,270 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:39:16,270 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://api.tradelocker.com/auth/jwt/token
+2025-10-15 11:39:16,270 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:39:17,073 - api.tradelocker_client - INFO - Authentication response status: 404
+2025-10-15 11:39:17,073 - api.tradelocker_client - INFO - Authentication response: 
+2025-10-15 11:39:17,073 - api.tradelocker_client - ERROR - Authentication failed with status 404
+2025-10-15 11:39:17,073 - api.tradelocker_client - ERROR - Response: 
+2025-10-15 11:39:17,073 - api.tradelocker_client - ERROR - Authentication error: Auth failed (HTTP 404): 
+2025-10-15 11:39:17,073 - __main__ - ERROR - Fatal error: Auth failed (HTTP 404): 
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 61, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 62, in initialize
+    await self.api_client.connect()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 40, in connect
+    await self.authenticate()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 77, in authenticate
+    raise Exception(f"Auth failed (HTTP {response.status}): {response_text[:200]}")
+Exception: Auth failed (HTTP 404): 
+2025-10-15 11:39:17,075 - __main__ - INFO - Cleaning up...
+2025-10-15 11:39:17,075 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:39:17,075 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:39:17,075 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:39:17,075 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:39:17,075 - __main__ - INFO - Trading system shut down
+2025-10-15 11:39:17,075 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:39:41,510 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:39:41,724 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:39:41,724 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:39:41,724 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://demo.tradelocker.com/backend-api/auth/jwt/token
+2025-10-15 11:39:41,724 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - Authentication response status: 201
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - Authentication response: {"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0cmFkZWxvY2tlci1hcGkiLCJhdWQiOiJ0cmFkZWxvY2tlci1hcGktdHJhZGVycyIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJzdWIiOiJHQVRFU0ZYIzcyMGU2MjNjLTJkMGItNGQ1My04MDVkLTBkYzQ2ODk1OGNmMyIsInVpZCI6IjcyMGU2MjNjLTJkMGItNGQ1My04MDVkLTBkYzQ2ODk1OGNmMyIsImJyYW5kIjoiR0FURVNGWCIsImhvc3QiOiJic2IudHJhZGVsb2NrZXIuY29tIiwiZW1haWwiOiJ0aWdneXN1cmZAZ21haWwuY29tIiwiaWF0IjoxNzYwNTI4MzgyLCJleHAiOjE3NjA1MzE5ODJ9.h9OH2_4hRm2C1KKoHJwlj12TMarhzP3kUbPfLW-_6rpw4QuZk5eo5ZJF5o9LNb
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - ✅ Authentication successful! Account: 1550788
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - Connected to TradeLocker - Account: 1550788
+2025-10-15 11:39:42,115 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
+2025-10-15 11:39:42,115 - __main__ - INFO - ✅ Trading system initialized
+2025-10-15 11:39:42,115 - __main__ - INFO - Starting Telegram bot...
+2025-10-15 11:39:42,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 11:39:42,666 - telegram.ext.Application - INFO - Application started
+2025-10-15 11:39:42,827 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 11:39:43,449 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:39:43,450 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
+2025-10-15 11:39:43,450 - __main__ - INFO - ✅ Telegram bot started
+2025-10-15 11:39:43,450 - __main__ - INFO - System ready. Waiting for commands via Telegram...
+2025-10-15 11:39:53,321 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:03,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:13,649 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:23,812 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:33,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:44,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:54,298 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:41:04,463 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:41:14,625 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:41:24,787 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:41:34,952 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:41:45,116 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:41:55,277 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:42:05,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:42:15,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:42:25,767 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:42:35,930 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:42:46,092 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:42:56,255 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:06,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:16,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:26,750 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:36,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:47,073 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:47,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:43:47,480 - core.trading_system - INFO - 🦈 Starting shark0locker trading system... 🦈
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Scanner-1 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Scanner-2 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Scanner-3 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Analyzer-1 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Analyzer-2 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Analyzer-3 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Analyzer-4 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Analyzer-5 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Executor-1 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent Executor-2 started
+2025-10-15 11:43:47,480 - agents.base_agent - INFO - Agent PerformanceMonitor started
+2025-10-15 11:43:47,480 - core.trading_system - INFO - 🦈 shark0locker is HUNTING! 🦈
+2025-10-15 11:43:47,481 - agents.scanner_agent - INFO - Scanner-1 scanning 13 pairs
+2025-10-15 11:43:47,481 - agents.scanner_agent - INFO - Scanner-2 scanning 13 pairs
+2025-10-15 11:43:47,481 - agents.scanner_agent - INFO - Scanner-3 scanning 13 pairs
+2025-10-15 11:43:47,482 - agents.analyzer_agent - INFO - Analyzer-1 ready for analysis
+2025-10-15 11:43:47,482 - agents.analyzer_agent - INFO - Analyzer-2 ready for analysis
+2025-10-15 11:43:47,482 - agents.analyzer_agent - INFO - Analyzer-3 ready for analysis
+2025-10-15 11:43:47,482 - agents.analyzer_agent - INFO - Analyzer-4 ready for analysis
+2025-10-15 11:43:47,482 - agents.analyzer_agent - INFO - Analyzer-5 ready for analysis
+2025-10-15 11:43:47,482 - agents.executor_agent - INFO - Executor-1 ready to execute
+2025-10-15 11:43:47,482 - agents.executor_agent - INFO - Executor-2 ready to execute
+2025-10-15 11:43:47,482 - agents.performance_monitor - INFO - PerformanceMonitor monitoring performance
+2025-10-15 11:43:48,116 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:43:48,288 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"079f66c9-d023-4c98-a373-8d2c51b6cde0"}
+2025-10-15 11:43:48,288 - agents.performance_monitor - INFO - Initial balance: $0.00
+2025-10-15 11:43:48,488 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"603d30d7-9562-4f90-a88b-59ae3cddb1f7"}
+2025-10-15 11:43:48,692 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"221de49e-67a6-4e91-a66c-2e4835c9a21a"}
+2025-10-15 11:43:49,421 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"11da320e-4f68-4810-a232-d911b6d9f5df"}
+2025-10-15 11:43:49,636 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7798ae68-80c7-4429-8569-2c4a193fd3b2"}
+2025-10-15 11:43:49,636 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:43:54,846 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8a1d5e05-5df8-4957-9248-1359e44c56f1"}
+2025-10-15 11:43:55,061 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ba62c002-1213-41e1-a996-5fc74b926037"}
+2025-10-15 11:43:55,268 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2373e2d4-ffab-43cd-a4c8-46e20106215a"}
+2025-10-15 11:43:55,987 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"114cc845-8710-44ca-87af-0ec11a2caa33"}
+2025-10-15 11:43:55,988 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:43:57,645 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:01,183 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"63204b53-79b7-4814-b344-be37b8ea5104"}
+2025-10-15 11:44:01,391 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a2aa38b6-d93f-4900-9c16-9b548ee247ab"}
+2025-10-15 11:44:01,594 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3c0278b1-6c1e-4514-8d83-9b36d41ea9d3"}
+2025-10-15 11:44:01,789 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9d908cc8-9069-45ff-a5a9-2bdf8277e099"}
+2025-10-15 11:44:01,789 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:06,995 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4cc8b6a3-0cf4-4005-a214-30b45e5da8ea"}
+2025-10-15 11:44:07,195 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c867c60d-fdd2-49d5-90fd-1a0eefdbbd2a"}
+2025-10-15 11:44:07,404 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"30950b49-74af-403c-8325-e4502e299f2f"}
+2025-10-15 11:44:07,604 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0502fc74-9f5b-451d-bdab-86e8295d136e"}
+2025-10-15 11:44:07,604 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:07,808 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:12,802 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"df6a77f7-e6d9-43d5-a1e6-61f633a872eb"}
+2025-10-15 11:44:13,007 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"02af9876-4f92-4286-ae51-dc383b1415b9"}
+2025-10-15 11:44:13,202 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"da54c97e-4191-42d7-8344-c653fdde40fe"}
+2025-10-15 11:44:13,394 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"38f6951a-95ee-4d70-954f-f0d27aca5f3f"}
+2025-10-15 11:44:13,394 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:17,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:18,608 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f4db60bc-3dce-4d21-9e85-0cf461e71887"}
+2025-10-15 11:44:18,797 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5d62a0c7-d808-4f26-a463-b0666faa782b"}
+2025-10-15 11:44:19,007 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1cc47d90-d9b9-43e4-8b8b-573dabaf95b7"}
+2025-10-15 11:44:19,211 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"69d01633-1fc4-4a99-90ca-f76d8f62b7fa"}
+2025-10-15 11:44:19,211 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:24,420 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"251fadc9-f5e2-4d12-b724-11778085b9f5"}
+2025-10-15 11:44:24,616 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"71197bb0-e974-4486-8a83-bd53f96f4925"}
+2025-10-15 11:44:24,818 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bdd0e185-5228-415f-8824-cbb06e519354"}
+2025-10-15 11:44:25,014 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7e4ed7a9-9aa8-4eeb-9d47-51b6f3d0499a"}
+2025-10-15 11:44:25,014 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:28,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:30,221 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e63235e1-0d54-4eca-a0bd-e8147e65ff7a"}
+2025-10-15 11:44:30,414 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7a3faa19-e9f0-453d-9163-cedeababf61f"}
+2025-10-15 11:44:30,619 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2930521a-763b-4ce7-9e33-9e9589a94f08"}
+2025-10-15 11:44:30,818 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"900b7633-79a2-4f71-9f5a-4312cad96b10"}
+2025-10-15 11:44:30,819 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:36,015 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0f47db78-8e4b-40c4-a376-c16f803bdd89"}
+2025-10-15 11:44:36,218 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"69a90894-d35d-41ab-8719-c17369989115"}
+2025-10-15 11:44:36,408 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7ec40980-338a-47c0-b6dd-9f9e25e4a2f8"}
+2025-10-15 11:44:36,612 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2c1bdcfe-54e3-40c4-b64b-ebe4b71cdeb6"}
+2025-10-15 11:44:36,612 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:38,296 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:41,810 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"55615cb0-03dd-44fc-886a-d789baf33a04"}
+2025-10-15 11:44:42,003 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f2e3b027-fbfd-4cdb-9459-64f3a7039a4d"}
+2025-10-15 11:44:42,196 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"49b3dfa5-7fad-4fc0-89e2-af38f64e553e"}
+2025-10-15 11:44:42,399 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"66842b51-3e83-4d37-a77b-2f96606ba87e"}
+2025-10-15 11:44:42,399 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:43,048 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7b6bf6fc-2325-4361-930d-976e0d02f1ad"}
+2025-10-15 11:44:43,245 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e2c77946-36ab-4131-8a4e-dbb4659d2a85"}
+2025-10-15 11:44:44,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendPhoto "HTTP/1.1 200 OK"
+2025-10-15 11:44:47,595 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8300fbb8-647a-46a4-bd4d-5e5ff8feecb9"}
+2025-10-15 11:44:47,814 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b5208e83-02f4-4a5d-8aea-e0130bfaf18e"}
+2025-10-15 11:44:48,021 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b1d9de8a-38af-47b6-8693-94775a404fcb"}
+2025-10-15 11:44:48,220 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"153d68d9-343a-4723-a855-99986fbc80ef"}
+2025-10-15 11:44:48,220 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:48,458 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:53,433 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5c9eb751-2c0d-4a6b-abc8-cc6d41282f7d"}
+2025-10-15 11:44:53,679 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ddefda1a-5ee4-4a67-a3f2-6e763a0c296d"}
+2025-10-15 11:44:53,875 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"43837504-a2cb-443a-b35f-1c55d544ea93"}
+2025-10-15 11:44:54,074 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"767276ce-0ab8-439b-b217-18c7d0d32808"}
+2025-10-15 11:44:54,074 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:44:58,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:44:59,297 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6f3d2438-8837-4483-95a1-b0ab2440e8eb"}
+2025-10-15 11:44:59,492 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"911654f8-6f10-4284-aac9-e59cf76be8b3"}
+2025-10-15 11:44:59,695 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a1cdbba9-dbdd-44dd-bc4a-d9173bb1acee"}
+2025-10-15 11:44:59,892 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c786122c-fc5c-49df-9d23-1f82635c0f3d"}
+2025-10-15 11:44:59,892 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:05,092 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6ee64863-2a45-4e3c-b349-126b1911bb81"}
+2025-10-15 11:45:05,290 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d023fb66-f513-4b62-a243-3d17209d4c94"}
+2025-10-15 11:45:05,493 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ba53ca00-bbbe-45cf-a875-03c48b5c68eb"}
+2025-10-15 11:45:05,691 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ef17c655-ad60-4b22-8690-8f11c3fcfcbf"}
+2025-10-15 11:45:05,691 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:08,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:45:10,889 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bd2d7be5-e965-4789-97fd-4ee00303d946"}
+2025-10-15 11:45:11,085 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"df650f69-23d3-46ee-b5fc-e80f42116f0d"}
+2025-10-15 11:45:11,283 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"80a7ff07-0285-45bd-99d1-cb75695cc952"}
+2025-10-15 11:45:11,488 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"93bf63ea-2e09-4570-bd3e-e0654b15bb8a"}
+2025-10-15 11:45:11,488 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:16,695 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3c81a089-4913-46d0-9691-451f07d10e8e"}
+2025-10-15 11:45:16,895 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"68816c54-2fdf-45db-95f7-1d07da11d578"}
+2025-10-15 11:45:17,090 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c6194031-6b6c-43c6-844a-aeb23c4a6290"}
+2025-10-15 11:45:17,289 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"618b0fe3-90c3-4ebd-87e4-415415af870b"}
+2025-10-15 11:45:17,290 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:18,949 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:45:22,491 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0fda5397-03d3-4f68-ae9c-ac3096dddf34"}
+2025-10-15 11:45:22,683 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"94e6b90d-19d2-4bb5-9fb2-65f3a85b4d74"}
+2025-10-15 11:45:22,883 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"61cfa071-86d8-4086-81b9-6f93fe03e88e"}
+2025-10-15 11:45:23,084 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"284ad8a3-0bb3-4f90-a3da-085c4b8fde6f"}
+2025-10-15 11:45:23,084 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:28,282 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5495856c-4ddf-4401-8c0f-8ce42481d29b"}
+2025-10-15 11:45:28,479 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"64d755c9-93c2-4ed9-a762-4e730ffc0661"}
+2025-10-15 11:45:28,669 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"35e18ed4-70f2-41d3-87f2-cdf802afcbbc"}
+2025-10-15 11:45:28,865 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0e859146-a060-4c0c-8527-347d072991f1"}
+2025-10-15 11:45:28,865 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:29,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:45:34,067 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a00206d8-d9ea-4f88-9b22-776bfad0d6ab"}
+2025-10-15 11:45:34,268 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9e37c2a6-782f-4371-accb-9eefec8c5ab3"}
+2025-10-15 11:45:34,483 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fb95f46e-63ec-4085-b4e5-62d3ef8b0086"}
+2025-10-15 11:45:34,684 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"52a6e9de-eaf0-49fd-ab15-4b2444cb5c86"}
+2025-10-15 11:45:34,685 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:39,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:45:39,872 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"da9608b2-ecb0-4a09-8d49-b1413b32bce1"}
+2025-10-15 11:45:40,076 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"035753d6-62d7-4143-9819-d52dfc87d8dc"}
+2025-10-15 11:45:40,271 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"29e081b2-1291-4eec-9b6f-361ce849f8c7"}
+2025-10-15 11:45:40,473 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a0121cd3-097b-4577-917e-c3bee4cd2935"}
+2025-10-15 11:45:40,473 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:45,701 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"48dffa7c-9866-4a91-8877-e71ad9d3bbdb"}
+2025-10-15 11:45:45,899 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5f8bac75-81e3-4ba8-b0d0-128ae08a0eb5"}
+2025-10-15 11:45:46,102 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"555aefed-81a2-4ee1-98a1-58b4b2961ba4"}
+2025-10-15 11:45:46,311 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2b6898b9-4140-463a-a030-9095ab5cf05b"}
+2025-10-15 11:45:46,311 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:49,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:45:51,508 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b91922f8-8265-4c29-909d-0f258388588b"}
+2025-10-15 11:45:51,738 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5470456d-8836-48fd-883e-7777baafb6e2"}
+2025-10-15 11:45:51,923 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5ce671f7-0131-4e85-afe4-bd01043b1d71"}
+2025-10-15 11:45:52,123 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3addd2f6-e98d-4a9f-8259-e690897fa41b"}
+2025-10-15 11:45:52,123 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:57,318 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4e606bf5-2289-417d-91f2-1465154eb5cf"}
+2025-10-15 11:45:57,519 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"50664682-6045-48c7-8272-c465cdc07f9b"}
+2025-10-15 11:45:57,729 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5cecdc44-0ada-4d9e-b9f3-92a82da6c971"}
+2025-10-15 11:45:57,930 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5c42436c-2a33-4e8d-96bf-4b524675b29d"}
+2025-10-15 11:45:57,930 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:45:59,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:46:03,143 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"561ad639-e466-479f-868d-1755c82a42ee"}
+2025-10-15 11:46:03,326 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bc060569-79fb-40df-ada4-21b02effe4f4"}
+2025-10-15 11:46:03,521 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c48c0e27-1f1e-406d-add3-3eebe2da3e4b"}
+2025-10-15 11:46:03,711 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d96b451b-09ff-40be-b684-7f91815d7ffd"}
+2025-10-15 11:46:03,711 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:08,907 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"582f570e-0032-481f-ab47-02f9fbe2c89a"}
+2025-10-15 11:46:09,095 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c52f913c-4380-46fc-943c-9eaf2d1c8252"}
+2025-10-15 11:46:09,295 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1df02c8f-caa5-431e-9b6a-8527579ea510"}
+2025-10-15 11:46:09,491 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5a844efa-3011-445b-b460-055f7302765c"}
+2025-10-15 11:46:09,491 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:09,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:46:14,686 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"cfd17280-2269-4c8c-945c-16b3305b953e"}
+2025-10-15 11:46:14,890 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5412ec61-725c-4023-9cd8-03b49d68f36f"}
+2025-10-15 11:46:15,093 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b0265785-ca2d-45c0-bc77-bd4dd9b3b18b"}
+2025-10-15 11:46:15,291 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6568fad2-3dcb-4835-9a47-b3a4108c1168"}
+2025-10-15 11:46:15,291 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:19,925 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:46:20,487 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3c93e9cb-b656-488c-9b5b-62ef88a8a12b"}
+2025-10-15 11:46:20,681 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f72302a3-7fbf-4ad2-9e49-49e5e310e600"}
+2025-10-15 11:46:20,874 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"cd847f77-6842-4e7f-9266-d1ba90e6c87a"}
+2025-10-15 11:46:21,074 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"88420dd2-8e92-486a-888b-4e7c35cefb3f"}
+2025-10-15 11:46:21,075 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:26,314 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f77200c0-8129-4751-8741-cb4215c866a1"}
+2025-10-15 11:46:26,507 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d48ad072-bf85-4f05-ba05-b8486afc236d"}
+2025-10-15 11:46:26,709 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"06723ecf-8f2f-471d-bbcc-f56c90d1c8b1"}
+2025-10-15 11:46:27,030 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d6bbb062-c496-4d7e-8025-86568ac4c786"}
+2025-10-15 11:46:27,030 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:30,087 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:46:32,225 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6d2d6bb4-4a9f-40d2-9ce8-35af404ccbb7"}
+2025-10-15 11:46:32,434 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c601198d-5eba-427e-b885-18531683b883"}
+2025-10-15 11:46:32,637 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d7dbef59-0f21-44d9-833b-2f6bdc0bd28e"}
+2025-10-15 11:46:32,832 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e4efcbe5-6ab6-4d61-bd36-51c8f0f74413"}
+2025-10-15 11:46:32,832 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:38,028 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"927cf213-485f-41ad-81c3-0084d1cb093b"}
+2025-10-15 11:46:38,223 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"883d0055-49a3-4390-90d8-d952b3ca06fd"}
+2025-10-15 11:46:38,417 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"24eddb13-d89e-4609-a9ba-0fac13be304b"}
+2025-10-15 11:46:38,608 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"99007f0b-b3b1-443a-9aa0-7bad7f903922"}
+2025-10-15 11:46:38,609 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:40,248 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:46:43,806 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"73336b54-9c78-447f-894b-a23fa77a2f86"}
+2025-10-15 11:46:44,002 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0d56ec29-d8a1-4b60-a428-ba9a17e38bec"}
+2025-10-15 11:46:44,197 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"da7b2590-dddb-48fd-b619-f60d7c26eb39"}
+2025-10-15 11:46:44,387 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"68185f92-272e-4da8-abe3-18f7032384d1"}
+2025-10-15 11:46:44,388 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:49,582 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f6c9d1bb-7061-4436-8bb2-c05d70847e3d"}
+2025-10-15 11:46:49,788 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e8e49da1-b251-449f-b86e-785e5f117d07"}
+2025-10-15 11:46:49,981 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"53613a8f-3888-4cbd-bc8b-0455de7bded1"}
+2025-10-15 11:46:50,167 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0243c19b-c6b5-4a6a-ae52-62c8b8decde5"}
+2025-10-15 11:46:50,167 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:46:50,409 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:46:55,352 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"66989773-d247-4303-94fe-3bfa7f1fda0d"}
+2025-10-15 11:46:55,566 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e3abca00-5201-4fe7-9e3c-a0f4107e61d4"}
+2025-10-15 11:46:55,759 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1f9394df-e865-4dfe-9a0a-6c9e42a5efde"}
+2025-10-15 11:46:55,951 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"77a2c7ec-3308-4542-a893-8537a06ff3ac"}
+2025-10-15 11:46:55,951 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:00,570 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:47:01,149 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5d57a270-17be-42ea-8831-fe7dab96f974"}
+2025-10-15 11:47:01,346 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f6c6aa6b-5e14-47f1-b263-04061bf40276"}
+2025-10-15 11:47:01,539 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8e9bc3ba-f57a-4c76-b2fb-629be5b567e2"}
+2025-10-15 11:47:01,735 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"128f0010-50f4-41d9-a563-37f193e92441"}
+2025-10-15 11:47:01,735 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:06,930 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9e7fb00a-a4a0-41fc-af15-3298b290eaf0"}
+2025-10-15 11:47:07,135 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1bbb17b2-0e1c-4cca-97dd-160e6becc94b"}
+2025-10-15 11:47:07,330 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d49d3ddf-6c13-4f8d-ba33-0b71f4f6186f"}
+2025-10-15 11:47:07,524 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"06457e76-dee9-4c17-82f3-5ca510af8d8f"}
+2025-10-15 11:47:07,524 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:10,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:47:12,731 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5e51ffc2-a3dd-42cc-9a12-151bb4ce8a8d"}
+2025-10-15 11:47:12,937 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4ac9c14c-a490-42df-9f62-43b75560ae2c"}
+2025-10-15 11:47:13,174 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"65a4f351-431b-4161-a8b1-c121b599da1b"}
+2025-10-15 11:47:13,369 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1e7d2eb5-97f4-4af9-9e20-4ecbfb07f26c"}
+2025-10-15 11:47:13,369 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:18,559 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3689b003-e7b7-4c4d-83ee-7c80b5114c20"}
+2025-10-15 11:47:18,753 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f10d2625-b10a-4475-b4cb-dbc3fc9bebf1"}
+2025-10-15 11:47:18,947 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"67cbecab-ce83-4ade-8a28-d1935010ac97"}
+2025-10-15 11:47:19,150 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"984dd0e0-36d4-4559-bc1f-847369229c91"}
+2025-10-15 11:47:19,150 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:20,892 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:47:24,365 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fecac096-d5ce-4cc2-9850-fa416c75564b"}
+2025-10-15 11:47:24,563 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"15dbb90e-0331-4478-aedb-a00f1b0f0641"}
+2025-10-15 11:47:24,765 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e847a31e-2476-4fc9-82ac-b0af52ece3af"}
+2025-10-15 11:47:24,966 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ac4031e6-06f5-46ef-8b1a-e9ba5db5f78f"}
+2025-10-15 11:47:24,966 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:30,163 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"672779ed-9611-4c4b-8f9f-b49a26aca0e6"}
+2025-10-15 11:47:30,362 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9e89913a-ba79-4320-88d1-7bcea394c104"}
+2025-10-15 11:47:30,556 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c52cf266-9b7b-4b14-987a-79dcb82bbb3a"}
+2025-10-15 11:47:30,778 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"95363644-1b62-4498-921e-faffe43753d9"}
+2025-10-15 11:47:30,778 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:31,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:47:35,960 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ae46177e-8393-4a84-9c61-eddda4adc9d5"}
+2025-10-15 11:47:36,156 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fa5c9c22-f0a0-420f-b6fc-d1bfb29f37c2"}
+2025-10-15 11:47:36,351 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"76976697-2fad-4c69-9ef1-9e5869dab652"}
+2025-10-15 11:47:36,545 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f4936a54-a996-490e-b4a3-6a9741d7a519"}
+2025-10-15 11:47:36,545 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:41,215 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:47:41,740 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"25d91e98-319f-4137-a159-78735590d1ee"}
+2025-10-15 11:47:41,927 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5fe1668d-3418-4df3-93f7-5721869ea4d3"}
+2025-10-15 11:47:42,126 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6d78f72e-cdeb-4566-8ed4-49ee1aae21e6"}
+2025-10-15 11:47:42,323 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ecaacefa-9d41-4151-ba42-a73a084d330f"}
+2025-10-15 11:47:42,323 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:47,529 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1560b07e-34d5-4ad3-af97-f244799bfd4b"}
+2025-10-15 11:47:47,723 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b4842b9a-0516-4ba9-85c0-222fbfafb836"}
+2025-10-15 11:47:47,923 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9a035171-cd7a-466a-84fa-5a0b53c08cf3"}
+2025-10-15 11:47:48,149 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b4cb9af0-ae8b-4ee9-a0be-3d8eba0f9f2e"}
+2025-10-15 11:47:48,149 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:51,377 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:47:53,345 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d34e82c3-81b2-4271-8b01-751c80f4a853"}
+2025-10-15 11:47:53,537 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ad635341-3647-4ca6-95cd-82b80cd56117"}
+2025-10-15 11:47:53,730 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"79eaae38-137a-4c2b-9e79-73b544f54f4c"}
+2025-10-15 11:47:53,922 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3c1f6ba0-c3e7-4a46-931a-76ef79e4ef6a"}
+2025-10-15 11:47:53,922 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:47:59,117 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"50bb102e-5c92-49c2-8e70-a43682b24d16"}
+2025-10-15 11:47:59,312 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0ec8f50d-2df9-40a2-af6d-a3e0bf62d482"}
+2025-10-15 11:47:59,514 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7b84534f-b8d5-48dc-9434-fdc1f9b5e41c"}
+2025-10-15 11:47:59,708 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8b9d915d-02f1-411f-8803-b4bb0ad36c33"}
+2025-10-15 11:47:59,708 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:01,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:48:04,921 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ff2e18f6-fd88-4e44-9823-01fbdba5a001"}
+2025-10-15 11:48:05,110 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3b1b8d14-7c56-49e4-b59a-449e16e56912"}
+2025-10-15 11:48:05,337 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"56463f8a-7ffa-4d4d-acef-2d3b444501fc"}
+2025-10-15 11:48:05,525 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a8b9f413-f10c-47ec-b98b-f90dbcd6242b"}
+2025-10-15 11:48:05,525 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:10,724 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f074f734-d811-410c-92f3-d9d6e8a3d4ec"}
+2025-10-15 11:48:10,916 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6cd140ee-3e31-4a9f-b621-ab3abda7b007"}
+2025-10-15 11:48:11,111 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"37f51812-4ec7-47e5-938e-765fa5b420c5"}
+2025-10-15 11:48:11,312 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ed627df7-cdd1-440f-a1af-9fe3c281958a"}
+2025-10-15 11:48:11,313 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:11,703 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:48:16,514 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7177d719-a597-4f72-9ab8-e22e9b5376d6"}
+2025-10-15 11:48:16,712 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"56ae41d2-74e8-4122-a3a9-cc09bc899369"}
+2025-10-15 11:48:16,905 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"04e77d5b-9c8e-4149-bfb3-08feaacc3cd0"}
+2025-10-15 11:48:17,093 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f0c56ba1-3dde-4ca4-ac8a-bdc7b36311a3"}
+2025-10-15 11:48:17,093 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:21,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:48:22,286 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"231f32d4-63f1-47dd-ad87-3872c69a71cb"}
+2025-10-15 11:48:22,483 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6cfef308-2b40-4ebf-a719-464857d322ef"}
+2025-10-15 11:48:22,692 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bdcc44c5-abb8-4da0-ba8a-2f747befa5b8"}
+2025-10-15 11:48:22,895 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3fa80c42-90a4-42e1-9140-25483efb7f84"}
+2025-10-15 11:48:22,895 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:28,091 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"210f451c-38ac-41da-92fb-959ea17529b9"}
+2025-10-15 11:48:28,284 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4bba750e-32e2-464f-a7fb-63777ed85efb"}
+2025-10-15 11:48:28,479 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3cd1b725-175a-4ed8-99a1-0c1e594d0a8a"}
+2025-10-15 11:48:28,675 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"cab82a6c-1ae1-4885-b0ad-94764d59b41c"}
+2025-10-15 11:48:28,676 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:32,038 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:48:33,869 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"27a31993-0efc-4eed-8841-e3b4c9b0b2e9"}
+2025-10-15 11:48:34,064 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9c976586-e2fc-4aaf-a1e8-b282962e2007"}
+2025-10-15 11:48:34,253 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"59b7b0c3-f0b3-4cd3-905c-da550a7667a6"}
+2025-10-15 11:48:34,446 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"330418cd-6d78-4ba2-bda0-20ac96114c32"}
+2025-10-15 11:48:34,446 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:39,647 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"647c3e32-1161-40f5-bd80-fa8e1231f513"}
+2025-10-15 11:48:39,838 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"77cbe56b-d22e-4b2a-a99a-e392d259fe33"}
+2025-10-15 11:48:40,031 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4876faa1-0590-4810-85fd-6b0301e95a2c"}
+2025-10-15 11:48:40,228 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e54de1c4-32d2-4f4b-84c1-11bc34d95655"}
+2025-10-15 11:48:40,228 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:42,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:48:45,432 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a55791ab-cc6f-442a-91db-1146940dcd57"}
+2025-10-15 11:48:45,627 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"81c135ae-d657-4363-ad7a-c3ae560a5b90"}
+2025-10-15 11:48:45,820 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6b730e78-dbe6-46ab-a3fc-e13a75c2fd16"}
+2025-10-15 11:48:46,016 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"554beae4-7a66-46d1-8b4a-2d069b85de5e"}
+2025-10-15 11:48:46,016 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:51,213 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2c395900-13cf-4d05-9a88-e26858405c35"}
+2025-10-15 11:48:51,415 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e679c645-f501-4465-bb74-071a3990a2b7"}
+2025-10-15 11:48:51,608 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"097886b6-d54a-45b9-a580-0589f5f87f02"}
+2025-10-15 11:48:51,801 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6fc1ddac-7077-495d-8ed1-5b63251917a0"}
+2025-10-15 11:48:51,801 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:48:52,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:48:56,999 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5a2c1a3e-b1db-477c-a57c-803822b5e944"}
+2025-10-15 11:48:57,192 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"809c4fa2-6fc7-4a55-8428-3de7b9c9eed8"}
+2025-10-15 11:48:57,406 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"20773f34-d2aa-4325-8650-9f049008cd6f"}
+2025-10-15 11:48:57,605 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fbf278f7-6680-43f3-a837-df56bab8fa94"}
+2025-10-15 11:48:57,605 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:02,519 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:49:02,803 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"394ba98b-fca5-4f0a-bb4e-9ce70c9f424f"}
+2025-10-15 11:49:02,996 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2da302b6-8655-45a9-b14b-e4bddcce9b96"}
+2025-10-15 11:49:03,187 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2728a786-d11a-4156-ac00-b312314d153b"}
+2025-10-15 11:49:03,382 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"43eee8db-bb18-4d1f-bfcd-380f4960b88a"}
+2025-10-15 11:49:03,382 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:05,564 - api.tradelocker_client - ERROR - Error getting ticker for USDJPY: 
+2025-10-15 11:49:08,594 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d44ad6b9-dd5f-4967-974f-2c661f11cd7a"}
+2025-10-15 11:49:08,787 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2251dc95-e70a-41a1-a424-a2bced40734c"}
+2025-10-15 11:49:08,990 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2db176cd-b778-47bd-b5d4-e8f0d2542e6d"}
+2025-10-15 11:49:09,189 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"06650b6a-225f-4f3e-8018-07d60e98c743"}
+2025-10-15 11:49:09,190 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:12,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:49:14,383 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4a8f1731-affc-43d9-8a99-86a8b15da3b4"}
+2025-10-15 11:49:14,576 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6c2ea120-41f9-478a-b4e2-23c47e7dd2cb"}
+2025-10-15 11:49:14,778 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7ba3f265-7602-4861-85c2-61807ec38873"}
+2025-10-15 11:49:14,970 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"42b41337-b288-41e1-8bd9-853ad36db0f5"}
+2025-10-15 11:49:14,970 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:20,163 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c1f43b21-dc42-44c6-8202-2b11275b5aa0"}
+2025-10-15 11:49:20,364 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8a5f0851-1857-4d97-acd0-04676f57e306"}
+2025-10-15 11:49:20,548 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"212476c4-fe6d-4a2f-a4e0-794634b67d7a"}
+2025-10-15 11:49:20,738 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"87b20d2e-440d-480c-84a0-a84618c2a7b8"}
+2025-10-15 11:49:20,738 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:22,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:49:25,944 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"38acd363-5817-49fd-8a8d-64714fd2a851"}
+2025-10-15 11:49:26,140 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bb613172-3f9d-414f-aaeb-2056278387ce"}
+2025-10-15 11:49:26,336 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c582ec0c-7971-4dd5-a759-fe1374888b67"}
+2025-10-15 11:49:26,531 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"dbfc1c2a-070b-4883-9be7-b15e606a6f5c"}
+2025-10-15 11:49:26,531 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:31,738 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2ca6dfb1-46f4-4638-8f88-a8b8319b5139"}
+2025-10-15 11:49:31,940 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"dc2c2043-0036-45dc-82f5-04dc9ebc7ffc"}
+2025-10-15 11:49:32,140 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"59604e32-d83d-41ff-91db-656b1f1ec10f"}
+2025-10-15 11:49:32,337 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d492ba7a-a3f7-4872-8585-5aebc3213fb7"}
+2025-10-15 11:49:32,338 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:33,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:49:37,520 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"91ca1ab2-0224-4dcb-8d65-0ef3f9a65616"}
+2025-10-15 11:49:37,713 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d0510f7a-b61c-4c6d-b22f-f8d10b889235"}
+2025-10-15 11:49:37,905 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"41bf8d0c-ac82-489b-a324-d9b8ffc078b6"}
+2025-10-15 11:49:38,108 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0b3ba3e5-4845-4169-b0e9-eca4fd857246"}
+2025-10-15 11:49:38,108 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:43,168 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:49:43,300 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"955cb499-e205-43bd-8d7e-6429e84e5020"}
+2025-10-15 11:49:43,495 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"30a9c92e-1a61-4d06-99fe-9ae827b79b4b"}
+2025-10-15 11:49:43,690 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"14c10cd4-2eed-4b82-81e4-b7e58c660df4"}
+2025-10-15 11:49:43,884 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3b6ea5c0-af90-4775-8d28-7e02cd2b81b5"}
+2025-10-15 11:49:43,884 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:44,703 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"14350809-6dd1-42e9-a5b6-c137163d46e7"}
+2025-10-15 11:49:44,910 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2a09f28e-3d84-406c-8487-6883bab39f5a"}
+2025-10-15 11:49:45,752 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendPhoto "HTTP/1.1 200 OK"
+2025-10-15 11:49:49,084 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f62eb76d-3ae9-494e-bd5a-7673db46327a"}
+2025-10-15 11:49:49,282 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6e4555ef-a452-473e-80f8-90682d6fe3b6"}
+2025-10-15 11:49:49,477 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a0550950-c01a-4198-a3c1-ba3f06a00e48"}
+2025-10-15 11:49:50,068 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c36aae85-d20b-451e-88bb-0d54fec3f70c"}
+2025-10-15 11:49:50,068 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:49:53,332 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:49:55,259 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9e3ba950-404d-460e-a17e-5a0c1ea4f194"}
+2025-10-15 11:49:55,453 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"82a3d85a-efeb-4dd6-b2e1-b9de854d1af2"}
+2025-10-15 11:49:55,657 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"943563ad-f190-41b0-9566-d6f050f59d26"}
+2025-10-15 11:49:55,864 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4a35f6c4-fbfd-4d4e-b7c9-ba620856f781"}
+2025-10-15 11:49:55,864 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:01,056 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"80094b00-e21b-4bc2-97cf-8a975fac0f72"}
+2025-10-15 11:50:01,252 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fabbd0a5-6dc1-4449-a9af-0a0e199a0911"}
+2025-10-15 11:50:01,448 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f75f6231-7813-47b9-ab11-f2a35605d72a"}
+2025-10-15 11:50:01,633 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"83b36a53-ee0c-495e-bd8b-cd7731ee7ce5"}
+2025-10-15 11:50:01,633 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:03,494 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:50:06,825 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"37e11dc8-a0a0-4758-a596-b4fb071a353c"}
+2025-10-15 11:50:07,028 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f0687b18-622d-41ab-b7f5-cbe85410b0b9"}
+2025-10-15 11:50:07,222 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b57ba3e9-a361-49bf-8a12-232e97211c26"}
+2025-10-15 11:50:07,422 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a148e4d5-5543-4fe8-a19a-6e696b867ae4"}
+2025-10-15 11:50:07,423 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:12,628 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f2409782-584f-4faf-a940-ea92b3e719c3"}
+2025-10-15 11:50:12,823 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8c936c9f-9d86-4501-80b3-bf5a320b79ee"}
+2025-10-15 11:50:13,012 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f31cb7d5-0fa5-4989-a357-c12b1e08c646"}
+2025-10-15 11:50:13,205 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0f60019c-5838-41e7-bf90-664a3f27c86a"}
+2025-10-15 11:50:13,205 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:13,656 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:50:18,410 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"29be4835-b319-49d8-ae65-201dae93583f"}
+2025-10-15 11:50:18,632 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0c8677f2-9fe4-44fc-9eb2-f787766b5ba2"}
+2025-10-15 11:50:18,816 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e8255750-95f1-468f-bb01-23385265595a"}
+2025-10-15 11:50:19,013 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"92c76e73-2ed2-4985-86ee-2d00f3cabb11"}
+2025-10-15 11:50:19,013 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:23,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:50:24,218 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4d0e23b6-2f3c-495c-ac21-28471e624bb2"}
+2025-10-15 11:50:24,409 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b1e7011f-5dec-4e5d-9414-83c9720f9d63"}
+2025-10-15 11:50:24,602 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0c7f22bb-5e59-46d9-9f57-97dcf62dc9ec"}
+2025-10-15 11:50:24,792 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"443120b1-1f05-4fa6-b066-b9a97a7233b0"}
+2025-10-15 11:50:24,792 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:29,975 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e765bcdb-adba-4742-8b5f-4097496ac496"}
+2025-10-15 11:50:30,167 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"88d1de4b-4c01-411d-a6b6-fe2f02a78a6f"}
+2025-10-15 11:50:30,361 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d114de4a-6c41-4323-880f-3642ad6bfcfd"}
+2025-10-15 11:50:30,564 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ff522fc1-40e0-441a-9c70-6ae5c0aa2b0b"}
+2025-10-15 11:50:30,564 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:33,978 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:50:35,757 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b5ef6e1d-d3bf-4493-b8c2-c02ebc54168b"}
+2025-10-15 11:50:35,976 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fb7ace69-ea28-45ba-8696-67b089a939ed"}
+2025-10-15 11:50:36,172 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"38845749-8d4a-44a9-9b4b-da93bdaa871d"}
+2025-10-15 11:50:36,367 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e7054eb7-cfc3-494b-af75-8b23d6dc7efe"}
+2025-10-15 11:50:36,367 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:41,582 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ae9a1aed-9c25-4941-8132-bf4c76c35c07"}
+2025-10-15 11:50:41,788 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a9a8e750-4f4f-4be1-8f48-7406d1f50942"}
+2025-10-15 11:50:41,983 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1983c2c0-a47b-4281-a9d4-9d62cd12c92f"}
+2025-10-15 11:50:42,180 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a15bce9b-d283-42ac-8270-9fb2c4c06985"}
+2025-10-15 11:50:42,181 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:44,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:50:47,377 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fd4a855d-2fce-4d3d-a1a5-cd2e304fbc2a"}
+2025-10-15 11:50:47,573 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bc91d284-2a03-41de-9701-c915bbc02461"}
+2025-10-15 11:50:47,776 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e733c85c-84fd-4c45-8881-f692b28e162e"}
+2025-10-15 11:50:47,980 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"11e85ba5-743d-42c4-b0ac-c24b703fd5ea"}
+2025-10-15 11:50:47,980 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:53,177 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a1c41074-050b-40fb-8072-6327786eb1d2"}
+2025-10-15 11:50:53,368 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e4b30ba6-8246-4f7a-8953-1512236c2d5c"}
+2025-10-15 11:50:53,567 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3c7144c5-1195-43ff-8092-9e8563847ce9"}
+2025-10-15 11:50:53,768 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d9476bb5-53b5-42f6-9f0b-8278f66efc35"}
+2025-10-15 11:50:53,768 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:50:54,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:50:58,963 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c199f56f-0f0f-47a9-90dd-dd386267c60b"}
+2025-10-15 11:50:59,157 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3cfca241-c085-4518-a34c-2f3d1e29eb75"}
+2025-10-15 11:50:59,351 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3f8ca1d5-c3dd-40ae-a702-3d4a92a091e4"}
+2025-10-15 11:50:59,546 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"dc8f6504-8328-4acc-83d5-2a517a26a82b"}
+2025-10-15 11:50:59,546 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:04,467 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:51:04,735 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"76b345ab-a04c-4304-b5c6-5854123d36bd"}
+2025-10-15 11:51:04,926 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"71439313-6855-4354-a3b8-a32110469e0c"}
+2025-10-15 11:51:05,116 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"aa4527e0-13d3-4ccf-87e2-4435a2dbe8fb"}
+2025-10-15 11:51:05,309 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7b2fbaca-4275-48e7-b94c-7ed12c97bb36"}
+2025-10-15 11:51:05,309 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:10,515 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c3f4b0f4-4ae9-412a-8c51-0bf3f8a83e63"}
+2025-10-15 11:51:10,782 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3f502c5e-fe5b-4336-b4c4-80f3c18b7563"}
+2025-10-15 11:51:10,984 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7452a37a-cc72-4d5d-accf-3d8b8e4fc482"}
+2025-10-15 11:51:11,184 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f3706364-7c4a-4204-886f-75777d17e2d0"}
+2025-10-15 11:51:11,184 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:14,629 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:51:16,389 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"32a41bd0-0524-47c6-a117-81cbd62472d7"}
+2025-10-15 11:51:16,582 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8a3a75e0-7b46-4608-9a06-99209b8f876a"}
+2025-10-15 11:51:16,794 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8c1894d5-1a89-47eb-bc56-1d763f16a647"}
+2025-10-15 11:51:16,994 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3c50eca9-aa13-473b-ab31-758a3b228cb2"}
+2025-10-15 11:51:16,995 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:22,180 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4cfea697-d928-4079-8f3d-42214b7054f8"}
+2025-10-15 11:51:22,378 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3e8fdf4d-1ada-4d2e-a9a3-4f471dabcd79"}
+2025-10-15 11:51:22,575 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7583a141-8952-4ae1-afac-5c9512c82483"}
+2025-10-15 11:51:22,773 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"be40cb94-14d2-4b68-9e6d-fad6dc9cf365"}
+2025-10-15 11:51:22,773 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:24,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:51:27,969 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c02cffb6-9679-4479-9d47-49eac29c42c5"}
+2025-10-15 11:51:28,156 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"627942b2-28a0-4f13-a5f5-61dc61324c4a"}
+2025-10-15 11:51:28,361 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1a091123-bccb-4d71-a89e-5b88f13836fa"}
+2025-10-15 11:51:28,559 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"cc7f11e7-6dc6-4b09-8714-7535a0b5065b"}
+2025-10-15 11:51:28,559 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:33,751 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"84d6e0d9-2fff-4ef2-850d-5fabd84b7629"}
+2025-10-15 11:51:33,953 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b97933ac-8213-4184-a05e-077c2a78c47d"}
+2025-10-15 11:51:34,144 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"be4ace34-c201-43e3-aa17-f92f80d9bf84"}
+2025-10-15 11:51:34,351 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"171abd5c-1b28-40e4-9ad9-6f336034ed5c"}
+2025-10-15 11:51:34,351 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:34,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:51:39,536 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a1fd7624-1e10-4f0c-8852-75c5a7455c19"}
+2025-10-15 11:51:39,731 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"befe6e4c-d6af-45a9-956f-9c037eeba16a"}
+2025-10-15 11:51:39,923 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b18cebe5-46e1-42d3-aa89-a90459af7e09"}
+2025-10-15 11:51:40,117 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"596325f2-5bbe-4934-bd6c-0dd656e49206"}
+2025-10-15 11:51:40,117 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:45,115 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:51:45,316 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"37b98379-154f-47ed-a154-6b73dbedfffc"}
+2025-10-15 11:51:45,506 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6f23d111-4de7-4f11-943a-ac27b32a05b0"}
+2025-10-15 11:51:45,698 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"51558f0c-de78-4e65-b68c-e14bbad16172"}
+2025-10-15 11:51:45,902 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"674df943-6767-4e27-a390-e96d763ccfa1"}
+2025-10-15 11:51:45,903 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:51,097 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"78a45d7b-487d-4ad8-8a0c-fdb8b2acf212"}
+2025-10-15 11:51:51,288 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ad966a30-7aa7-4c3a-a300-c663406b2e97"}
+2025-10-15 11:51:51,484 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5f53f225-cea2-4c8a-8b72-e5989d883ad5"}
+2025-10-15 11:51:51,675 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5bba9965-58e3-4539-84ea-159cc1070c9a"}
+2025-10-15 11:51:51,675 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:51:55,279 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:51:56,872 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"49f4022c-463a-48a4-ab24-5634b34cb94b"}
+2025-10-15 11:51:57,065 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"86d5a60a-3956-48d3-b74d-e46d298eac4e"}
+2025-10-15 11:51:57,273 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e5fa4463-ba5a-4b33-8262-d02be921d3d8"}
+2025-10-15 11:51:57,463 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"339a23f3-5743-4d78-b896-1171eed5f91e"}
+2025-10-15 11:51:57,463 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:02,646 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d0528fe9-3913-456d-a371-f589a2a73943"}
+2025-10-15 11:52:02,844 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"dfed13d1-22e6-422d-a2ca-4c6765a6053d"}
+2025-10-15 11:52:03,041 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"be599afe-f5f8-4038-b6d1-a285f40043d6"}
+2025-10-15 11:52:03,235 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"02c8835b-53b9-4665-be43-9f0a796d78dc"}
+2025-10-15 11:52:03,236 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:05,444 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:52:08,424 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c083ef43-217b-4396-8997-e131994a76ab"}
+2025-10-15 11:52:08,621 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c1216584-e0b3-40f9-8c07-2f5b29029d15"}
+2025-10-15 11:52:08,820 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"938dad60-b43f-4891-802a-d927b91e4df0"}
+2025-10-15 11:52:09,008 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7831ad30-b139-4272-bc5c-ee8fdec0e0e1"}
+2025-10-15 11:52:09,008 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:14,222 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7ab3ad75-3df8-4a12-9ec9-ab4e19ee82b0"}
+2025-10-15 11:52:14,410 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"4d673a88-e228-41fb-a564-f43595a042bc"}
+2025-10-15 11:52:14,610 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"54a0f8b0-f25f-4064-a833-148cec4a650f"}
+2025-10-15 11:52:14,793 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"bce8e775-0a79-419d-923a-84566bfb739c"}
+2025-10-15 11:52:14,793 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:15,605 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:52:19,998 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3eed5632-4ae6-4af1-8e14-ece06754eac1"}
+2025-10-15 11:52:20,193 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7da6f61f-6d2f-4d5e-8da2-b149b54252f7"}
+2025-10-15 11:52:20,388 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"cc14eedd-6ef4-476d-95a1-6f2bcdae5bae"}
+2025-10-15 11:52:20,586 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"edae5dde-2cef-4fa2-834d-e4065bd38582"}
+2025-10-15 11:52:20,586 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:25,770 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:52:25,782 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8a261098-6b4f-4753-b2ce-c757559c1503"}
+2025-10-15 11:52:25,971 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"5114e683-356f-4bbf-8001-c7a8390a6262"}
+2025-10-15 11:52:26,161 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6ddb03d9-7366-43f9-9b43-4941dc8ae770"}
+2025-10-15 11:52:26,360 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"a5d0a949-028b-4680-be88-95a183d17604"}
+2025-10-15 11:52:26,360 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:31,555 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e4b2c2e7-e0b6-468f-b9cc-d1a83cea100a"}
+2025-10-15 11:52:31,754 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c835c60e-9b86-49bd-85a6-e4d1b8d63348"}
+2025-10-15 11:52:31,951 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"da584e48-8b0b-46b1-bfd3-b0591ee40509"}
+2025-10-15 11:52:32,145 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"67470529-b2e0-445f-9e5b-ca70f0d06c53"}
+2025-10-15 11:52:32,145 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:35,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:52:37,338 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"070285d2-699e-43d8-a1c9-79ccf4a44476"}
+2025-10-15 11:52:37,534 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"42904ec2-5f7f-4dd4-89e4-b6280cc2ac7e"}
+2025-10-15 11:52:37,728 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3f1c936a-6678-4995-8bab-15e00feb9c17"}
+2025-10-15 11:52:37,921 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d972fbca-cc29-423c-a019-29507094c721"}
+2025-10-15 11:52:37,921 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:43,115 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"dfc662e6-d060-4501-b698-d3574be7593e"}
+2025-10-15 11:52:43,316 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"227f3305-7e89-4023-9e3a-80edbc15c06e"}
+2025-10-15 11:52:43,501 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2832d51c-fae8-41a8-a5f5-95366089445d"}
+2025-10-15 11:52:43,696 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2874a652-7941-42c2-aa11-8933a87248e2"}
+2025-10-15 11:52:43,697 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:46,100 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:52:48,903 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"208e6737-e237-457c-b691-a7c528f060b0"}
+2025-10-15 11:52:49,096 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3a31775b-1250-49c0-beea-7b296787c8e7"}
+2025-10-15 11:52:49,290 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"aa730c12-d374-482b-947a-0579042ff16d"}
+2025-10-15 11:52:49,485 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"98fda736-2361-4f93-8642-a7da36182983"}
+2025-10-15 11:52:49,485 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:54,672 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ba17a98c-2218-4031-8539-edf38b6905d7"}
+2025-10-15 11:52:54,867 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"33ac5c68-e97a-4df7-9c1d-0e369eb1b78e"}
+2025-10-15 11:52:55,065 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f148502f-1084-44db-a776-fd0d9e3e8c8e"}
+2025-10-15 11:52:55,261 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"37499cd2-e0ba-4771-9f31-4b8ead8654fd"}
+2025-10-15 11:52:55,261 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:52:56,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:00,476 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"426d1e37-c19d-4324-a3c9-7f37789f44c1"}
+2025-10-15 11:53:00,671 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6bff9adf-dc40-40d3-b757-217a0302417f"}
+2025-10-15 11:53:00,880 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0fca8d35-52f8-47ac-8181-0a534e1be650"}
+2025-10-15 11:53:01,092 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"74bf3671-37e0-4aa3-a850-a8aff4a0a651"}
+2025-10-15 11:53:01,092 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:06,287 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"073a4d24-8804-4866-9d4e-74d6b9cc9c56"}
+2025-10-15 11:53:06,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:06,472 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"cbbd2966-8bf3-47e4-9b76-5da3b6800a11"}
+2025-10-15 11:53:06,665 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0c9d632c-4cfa-4458-bdef-343c5e118236"}
+2025-10-15 11:53:06,869 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c7f9c3c4-894d-45ce-b2f9-2e56a34a0485"}
+2025-10-15 11:53:06,869 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:12,067 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b7db38c0-3c35-411e-9488-e13bbc34eb8a"}
+2025-10-15 11:53:12,263 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"777e39bf-6d34-47ea-be86-2bd4b5340527"}
+2025-10-15 11:53:12,452 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f4a7d481-a086-4b14-8663-178145929004"}
+2025-10-15 11:53:12,648 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b2873abe-93bd-49da-a41f-bff53dd1dfec"}
+2025-10-15 11:53:12,648 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:16,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:17,838 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fbdbb18f-e95e-469f-af92-6a043c3b01c2"}
+2025-10-15 11:53:18,041 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"205397c4-2c2a-4528-841f-0d214e7b1dd8"}
+2025-10-15 11:53:18,261 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"dd9f470b-04d5-4fb8-b99c-8bb381e1e7f1"}
+2025-10-15 11:53:18,497 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3fbe5c14-9329-418d-a704-c77b5488e1fe"}
+2025-10-15 11:53:18,497 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:23,684 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"342d3a15-545e-499f-8122-be1009e514c0"}
+2025-10-15 11:53:23,904 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b2656aeb-c3b6-48a2-9838-871a62fef990"}
+2025-10-15 11:53:24,094 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"16571f79-619d-4fbf-a955-1b9a658b2c98"}
+2025-10-15 11:53:24,285 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"55a5133f-1436-4115-a6a2-f3adcd68c866"}
+2025-10-15 11:53:24,285 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:26,751 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:29,518 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ec0a7868-7d96-404c-a7c0-4d3dca986fb9"}
+2025-10-15 11:53:29,714 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6a3dedd2-adec-4541-a1b8-6a34e7868e83"}
+2025-10-15 11:53:29,913 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"56456eef-a605-4a40-934c-bedcaa0bdefe"}
+2025-10-15 11:53:30,107 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"fcff2dec-5e99-47ff-926a-8fc40afcea26"}
+2025-10-15 11:53:30,108 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:35,298 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0d480a4a-5702-4c19-834d-f1160fc17b72"}
+2025-10-15 11:53:35,495 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f3677568-165d-4e85-a045-d7c6bb57b7c3"}
+2025-10-15 11:53:35,686 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b4d0491e-2330-4712-8319-f794293f2e87"}
+2025-10-15 11:53:35,880 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6a459f1c-161f-49ba-97cf-7c21122625d6"}
+2025-10-15 11:53:35,881 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:36,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:41,073 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"94595bc6-e05f-4038-90db-4408754348d5"}
+2025-10-15 11:53:41,261 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2493aba0-acc6-454e-a87b-a68293f17b95"}
+2025-10-15 11:53:41,458 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"884e4239-3119-45d6-a676-d0099049663f"}
+2025-10-15 11:53:41,659 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"06b87250-0222-4546-98d8-61358b90f388"}
+2025-10-15 11:53:41,659 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:46,859 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"69bb84d0-0241-4414-bba8-0d8d394f1286"}
+2025-10-15 11:53:47,052 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"de9653e6-7909-44cd-ba25-2d9d97c7aa4e"}
+2025-10-15 11:53:47,077 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:47,249 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"56d856e3-3e74-430b-af3a-361718127c22"}
+2025-10-15 11:53:47,445 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d57ca96b-373a-423d-a1a0-c2db0d303a18"}
+2025-10-15 11:53:47,445 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:52,647 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"03a3113c-b3c2-4ca9-ac00-18271574fc0b"}
+2025-10-15 11:53:52,842 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"563d3be5-2df4-4a9e-a528-335a87d68b8a"}
+2025-10-15 11:53:53,036 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"33646a50-5c66-4b00-a0a8-1c2c15b2236c"}
+2025-10-15 11:53:53,267 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"227ab849-b67f-4206-abc3-8af5efb649d1"}
+2025-10-15 11:53:53,267 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:53:57,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:53:58,479 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"0ad2ebb7-0abb-4e1f-8d8b-3521b03163b6"}
+2025-10-15 11:53:58,671 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c98b0184-e585-42a4-affd-7b47c50331c3"}
+2025-10-15 11:53:58,898 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d1585b60-b5f4-433f-9ad1-2587de436d8f"}
+2025-10-15 11:53:59,092 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f4972528-e9f2-4254-8b82-c21ef7a8725e"}
+2025-10-15 11:53:59,092 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:54:04,291 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"836ba29a-d809-4771-9dda-c7731099ff7f"}
+2025-10-15 11:54:04,485 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"96517db2-7a53-4598-8b4c-27ed5beecfc8"}
+2025-10-15 11:54:04,681 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6a5861a7-05f3-48fd-979b-5f649d3a3ef1"}
+2025-10-15 11:54:04,877 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d6e63225-a668-4173-bc2f-b9e299e374d8"}
+2025-10-15 11:54:04,877 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:54:07,405 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:54:08,900 - __main__ - INFO - Received signal 2
+2025-10-15 11:54:08,900 - __main__ - INFO - 🛑 Initiating shutdown...
+2025-10-15 11:54:08,900 - __main__ - INFO - Cleaning up...
+2025-10-15 11:54:08,900 - core.trading_system - INFO - 🛑 Stopping shark0locker trading system... 🛑
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Scanner-1 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Scanner-2 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Scanner-3 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Analyzer-1 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Analyzer-2 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Analyzer-3 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Analyzer-4 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Analyzer-5 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Executor-1 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent Executor-2 stopped
+2025-10-15 11:54:08,900 - agents.base_agent - INFO - Agent PerformanceMonitor stopped
+2025-10-15 11:54:09,100 - api.tradelocker_client - INFO - Closed 0/0 positions
+2025-10-15 11:54:09,100 - core.trading_system - INFO - 🛑 shark0locker stopped 🛑
+2025-10-15 11:54:09,101 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:54:09,103 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:54:09,103 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:54:09,103 - __main__ - INFO - Trading system shut down
+2025-10-15 11:54:09,749 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:54:13,246 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:54:13,247 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-10-15 11:54:13,247 - telegram.ext.Application - INFO - Application.stop() complete
+2025-10-15 11:54:13,248 - utils.telegram_bot - INFO - Telegram bot stopped
+2025-10-15 11:54:13,248 - __main__ - INFO - Telegram bot stopped
+2025-10-15 11:54:13,248 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:54:13,292 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:54:13,686 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:54:13,687 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:54:13,687 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://demo.tradelocker.com/backend-api/auth/jwt/token
+2025-10-15 11:54:13,687 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:54:14,215 - api.tradelocker_client - INFO - Authentication response status: 201
+2025-10-15 11:54:14,215 - api.tradelocker_client - INFO - Authentication response: {"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0cmFkZWxvY2tlci1hcGkiLCJhdWQiOiJ0cmFkZWxvY2tlci1hcGktdHJhZGVycyIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJzdWIiOiJHQVRFU0ZYIzcyMGU2MjNjLTJkMGItNGQ1My04MDVkLTBkYzQ2ODk1OGNmMyIsInVpZCI6IjcyMGU2MjNjLTJkMGItNGQ1My04MDVkLTBkYzQ2ODk1OGNmMyIsImJyYW5kIjoiR0FURVNGWCIsImhvc3QiOiJic2IudHJhZGVsb2NrZXIuY29tIiwiZW1haWwiOiJ0aWdneXN1cmZAZ21haWwuY29tIiwiaWF0IjoxNzYwNTI5MjU0LCJleHAiOjE3NjA1MzI4NTR9.UHh70M4xGTIxdEmJLAwR-mLqc3KzaKWu-apinRux-tnf1YZptnkR65mQx8qUb_
+2025-10-15 11:54:14,215 - api.tradelocker_client - INFO - ✅ Authentication successful! Account: 1550788
+2025-10-15 11:54:14,216 - api.tradelocker_client - INFO - Connected to TradeLocker - Account: 1550788
+2025-10-15 11:54:14,216 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
+2025-10-15 11:54:14,216 - __main__ - INFO - ✅ Trading system initialized
+2025-10-15 11:54:14,216 - __main__ - INFO - Starting Telegram bot...
+2025-10-15 11:54:14,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 11:54:14,801 - telegram.ext.Application - INFO - Application started
+2025-10-15 11:54:14,961 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 11:54:15,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:54:15,601 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
+2025-10-15 11:54:15,601 - __main__ - INFO - ✅ Telegram bot started
+2025-10-15 11:54:15,601 - __main__ - INFO - System ready. Waiting for commands via Telegram...
+2025-10-15 11:54:25,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:54:35,638 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:54:45,803 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:54:55,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:55:06,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:55:16,295 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:55:26,459 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:55:36,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:55:46,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:55:56,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:56:07,117 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:56:17,281 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:56:27,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:56:37,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:56:47,777 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:56:57,942 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:57:08,105 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:57:18,271 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:57:28,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:57:38,597 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:57:48,761 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:57:58,924 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:58:09,086 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:58:19,250 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:58:29,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:58:39,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:58:49,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:58:59,903 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:59:10,067 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:59:20,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:59:30,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:59:40,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:59:50,726 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:00:00,891 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:00:11,055 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:00:21,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:00:31,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:00:41,544 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:00:51,709 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:01:01,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:01:12,039 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:01:22,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:01:32,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:01:42,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:01:52,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:02:02,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:02:13,019 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:02:23,182 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:02:33,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:02:43,510 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:02:53,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:03:03,836 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:03:14,002 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:03:24,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:03:34,327 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:03:44,490 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:03:54,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:04:04,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:04:14,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:04:25,143 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:04:35,306 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:04:45,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:04:55,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:05:05,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:05:15,964 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:05:26,128 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:05:36,294 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:05:46,457 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:05:56,620 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:06:06,783 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:06:16,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:06:27,109 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:06:37,276 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:06:47,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:06:57,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:07:07,765 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:07:17,930 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:07:28,095 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:07:38,258 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:07:48,421 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 12:07:58,584 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:03:30,506 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:03:40,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:03:50,836 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:01,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:11,167 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:21,330 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:24,963 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:24,966 - core.trading_system - INFO - 🦈 Starting shark0locker trading system... 🦈
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Scanner-1 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Scanner-2 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Scanner-3 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Analyzer-1 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Analyzer-2 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Analyzer-3 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Analyzer-4 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Analyzer-5 started
+2025-10-15 13:04:24,966 - agents.base_agent - INFO - Agent Executor-1 started
+2025-10-15 13:04:24,967 - agents.base_agent - INFO - Agent Executor-2 started
+2025-10-15 13:04:24,967 - agents.base_agent - INFO - Agent PerformanceMonitor started
+2025-10-15 13:04:24,967 - core.trading_system - INFO - 🦈 shark0locker is HUNTING! 🦈
+2025-10-15 13:04:24,967 - agents.scanner_agent - INFO - Scanner-1 scanning 13 pairs
+2025-10-15 13:04:24,968 - agents.scanner_agent - INFO - Scanner-2 scanning 13 pairs
+2025-10-15 13:04:24,968 - agents.scanner_agent - INFO - Scanner-3 scanning 13 pairs
+2025-10-15 13:04:24,968 - agents.analyzer_agent - INFO - Analyzer-1 ready for analysis
+2025-10-15 13:04:24,968 - agents.analyzer_agent - INFO - Analyzer-2 ready for analysis
+2025-10-15 13:04:24,968 - agents.analyzer_agent - INFO - Analyzer-3 ready for analysis
+2025-10-15 13:04:24,968 - agents.analyzer_agent - INFO - Analyzer-4 ready for analysis
+2025-10-15 13:04:24,968 - agents.analyzer_agent - INFO - Analyzer-5 ready for analysis
+2025-10-15 13:04:24,968 - agents.executor_agent - INFO - Executor-1 ready to execute
+2025-10-15 13:04:24,968 - agents.executor_agent - INFO - Executor-2 ready to execute
+2025-10-15 13:04:24,968 - agents.performance_monitor - INFO - PerformanceMonitor monitoring performance
+2025-10-15 13:04:25,271 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"092b76dd-3afb-4e3e-8553-4c31f7b07633"}
+2025-10-15 13:04:25,271 - agents.performance_monitor - INFO - Initial balance: $0.00
+2025-10-15 13:04:25,476 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b335b1bb-56a3-41ec-a5cc-b2e9fb79fd88"}
+2025-10-15 13:04:25,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 13:04:25,689 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e5bae68f-16eb-4e41-83eb-a372071e9ec6"}
+2025-10-15 13:04:25,908 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"398d288b-31db-42bb-b5a7-511b8344e988"}
+2025-10-15 13:04:26,128 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"57ddd484-34ed-46ed-a9e2-765398afdc26"}
+2025-10-15 13:04:26,128 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:04:31,337 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"86e2b7c4-7a75-4f0b-867e-6cc53f7abb77"}
+2025-10-15 13:04:31,535 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"e646cbf5-9ec8-4100-959d-c34456108e3d"}
+2025-10-15 13:04:31,744 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"9627d493-d09d-4cf8-a1f4-cb31d1b40781"}
+2025-10-15 13:04:31,951 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6d3878ad-669b-420f-b848-69f4309417f6"}
+2025-10-15 13:04:31,951 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:04:35,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:37,170 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d3d41e52-7ce3-4e0b-9dcc-1011e3f94a82"}
+2025-10-15 13:04:37,377 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"030aafd6-2ca3-45eb-8407-6a3264762684"}
+2025-10-15 13:04:37,580 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"22e45c0f-7eb0-49f2-a9f7-7ce7d9f927f4"}
+2025-10-15 13:04:37,796 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"81e51995-f779-4d65-b172-2584e4702d23"}
+2025-10-15 13:04:37,796 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:04:43,012 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"2ffe7559-9d8b-47ef-9d5a-00df66166c3d"}
+2025-10-15 13:04:43,210 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"6b30c8c2-b5ba-4843-a4cc-7e2af08abaf9"}
+2025-10-15 13:04:43,424 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"3f4f6a5f-df47-4d24-89c0-c13fd27e8f87"}
+2025-10-15 13:04:43,630 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"286bc0cc-9319-48c5-af67-290a6f73384c"}
+2025-10-15 13:04:43,630 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:04:45,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:04:48,847 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7fa74fa0-52f8-4717-afd7-933bd3554a07"}
+2025-10-15 13:04:49,066 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"506ee21c-4421-4d29-a680-d3ca90db4f60"}
+2025-10-15 13:04:49,270 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1f53706d-5509-48d3-be26-97030c14734f"}
+2025-10-15 13:04:49,472 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"1abda3f0-b268-4bfa-8db5-6b2992d29481"}
+2025-10-15 13:04:49,472 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:04:54,683 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f37518e4-b805-481d-a2e7-e648c281f84d"}
+2025-10-15 13:04:54,889 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"00cdbcb9-d531-4779-81e2-c56c989c944a"}
+2025-10-15 13:04:55,094 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f5a97ab6-d33f-423d-8104-069cbf720c48"}
+2025-10-15 13:04:55,303 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"41269576-f948-463f-986c-a4c30fdd39bf"}
+2025-10-15 13:04:55,303 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:04:55,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:05:00,507 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"ae94d961-8c18-4bba-8141-fe72ac2a13f0"}
+2025-10-15 13:05:00,724 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"b62a4b26-c788-41d8-a479-70c00139ffe1"}
+2025-10-15 13:05:00,933 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"7323dcf6-2ba1-4b84-84af-78d0b7856e5d"}
+2025-10-15 13:05:01,150 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f1d2c7b4-2a78-402e-80aa-94e94337056e"}
+2025-10-15 13:05:01,150 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:05:05,628 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:05:06,354 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"28dd5323-e1b7-4034-ae63-086c35e2672e"}
+2025-10-15 13:05:06,562 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"625a7728-401c-4fb2-a6d7-8e77825fca4e"}
+2025-10-15 13:05:06,775 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"f2885af8-b730-4195-b8b1-59e9a41bab0b"}
+2025-10-15 13:05:06,984 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"8bccc19f-48c6-466e-80c7-c3ec75219ee5"}
+2025-10-15 13:05:06,984 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:05:12,211 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"289d9b45-a6d9-4abc-a5cd-f1e2502ffa80"}
+2025-10-15 13:05:12,408 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"d0dec428-01a5-4eed-9b14-c181d1d11407"}
+2025-10-15 13:05:12,613 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"c5b0044b-b7e8-4000-9c9b-9a11e6c2f165"}
+2025-10-15 13:05:12,811 - api.tradelocker_client - ERROR - Failed to get account info: {"message":"Cannot GET /backend-api/auth/jwt/account/1550788","statusCode":404,"requestId":"59288279-4057-47a8-a3a5-0d64d4eb91e2"}
+2025-10-15 13:05:12,811 - agents.performance_monitor - INFO - Performance: Balance: $0.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 13:05:15,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:05:16,275 - __main__ - INFO - Received signal 2
+2025-10-15 13:05:16,275 - __main__ - INFO - 🛑 Initiating shutdown...
+2025-10-15 13:05:16,275 - __main__ - INFO - Cleaning up...
+2025-10-15 13:05:16,275 - core.trading_system - INFO - 🛑 Stopping shark0locker trading system... 🛑
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Scanner-1 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Scanner-2 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Scanner-3 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Analyzer-1 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Analyzer-2 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Analyzer-3 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Analyzer-4 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Analyzer-5 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Executor-1 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent Executor-2 stopped
+2025-10-15 13:05:16,275 - agents.base_agent - INFO - Agent PerformanceMonitor stopped
+2025-10-15 13:05:16,464 - api.tradelocker_client - INFO - Closed 0/0 positions
+2025-10-15 13:05:16,465 - core.trading_system - INFO - 🛑 shark0locker stopped 🛑
+2025-10-15 13:05:16,465 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:16,466 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 13:05:16,466 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 13:05:16,466 - __main__ - INFO - Trading system shut down
+2025-10-15 13:05:17,123 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 13:05:18,736 - __main__ - INFO - Starting shark0locker in DEMO mode...
+2025-10-15 13:05:18,736 - __main__ - INFO - Initializing trading system...
+2025-10-15 13:05:18,736 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 13:05:18,736 - __main__ - ERROR - Fatal error: MockTradeLockerClient.__init__() got an unexpected keyword argument 'api_url'
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_demo.py", line 157, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 54, in initialize
+    self.api_client = TradeLockerClient(
+                      ~~~~~~~~~~~~~~~~~^
+        email=self.config.tradelocker.email,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        api_url=self.config.tradelocker.api_url
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: MockTradeLockerClient.__init__() got an unexpected keyword argument 'api_url'
+2025-10-15 13:05:18,737 - __main__ - INFO - Cleaning up...
+2025-10-15 13:05:18,737 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:18,737 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:18,737 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 13:05:18,737 - __main__ - INFO - Trading system shut down
+2025-10-15 13:05:18,737 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 13:05:20,615 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:05:20,616 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-10-15 13:05:20,616 - telegram.ext.Application - INFO - Application.stop() complete
+2025-10-15 13:05:20,616 - utils.telegram_bot - INFO - Telegram bot stopped
+2025-10-15 13:05:20,617 - __main__ - INFO - Telegram bot stopped
+2025-10-15 13:05:20,617 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 13:06:28,885 - INFO - Starting WORKING shark0locker demo...
+2025-10-15 13:06:29,425 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 13:06:29,425 - INFO - Application started
+2025-10-15 13:06:29,587 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 13:06:30,255 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 13:06:30,256 - INFO - ✅ Bot ready - waiting for /start command
+2025-10-15 13:06:37,873 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:06:37,874 - INFO - 🦈 SHARK ACTIVATED - Starting to hunt!
+2025-10-15 13:06:38,495 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 13:06:48,037 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 13:06:58,201 - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"

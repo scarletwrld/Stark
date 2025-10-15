@@ -1,0 +1,39 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║    🦈  SHARK0LOCKER - REAL TRADING SYSTEM  🦈                ║
+║                                                               ║
+║         ⚠️  REAL MONEY - REAL TRADING - HEADLESS MODE ⚠️     ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+        
+2025-10-15 11:33:50,406 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:50,636 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:33:50,636 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:33:50,636 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://api.tradelocker.com/auth/jwt/token
+2025-10-15 11:33:50,636 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:33:51,367 - api.tradelocker_client - INFO - Authentication response status: 404
+2025-10-15 11:33:51,367 - api.tradelocker_client - INFO - Authentication response: 
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Authentication failed with status 404
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Response: 
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Authentication error: Auth failed (HTTP 404): 
+2025-10-15 11:33:51,367 - __main__ - ERROR - Fatal error: Auth failed (HTTP 404): 
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 61, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 62, in initialize
+    await self.api_client.connect()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 40, in connect
+    await self.authenticate()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 76, in authenticate
+    raise Exception(f"Auth failed (HTTP {response.status}): {response_text[:200]}")
+Exception: Auth failed (HTTP 404): 
+2025-10-15 11:33:51,369 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:51,369 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:51,369 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:51,369 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:33:51,369 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:33:51,369 - __main__ - INFO - Trading system shut down
+2025-10-15 11:33:51,369 - __main__ - INFO - ✅ Shutdown complete
+
+✅ shark0locker stopped
