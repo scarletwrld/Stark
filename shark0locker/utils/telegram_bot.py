@@ -39,9 +39,10 @@ class TelegramBotController:
             self.app.add_handler(CommandHandler("trades", self.cmd_trades))
             self.app.add_handler(CommandHandler("closeall", self.cmd_close_all))
             
-            # Start bot in background
+            # Start bot with polling
             await self.app.initialize()
             await self.app.start()
+            await self.app.updater.start_polling(drop_pending_updates=True)
             
             # Start periodic notifications
             self.notification_task = asyncio.create_task(self.send_periodic_updates())
@@ -49,7 +50,7 @@ class TelegramBotController:
             # Send startup message
             await self.send_message("🦈 shark0locker is ONLINE and ready to hunt! 🦈")
             
-            logger.info("Telegram bot started")
+            logger.info("Telegram bot started and polling for updates")
             
         except Exception as e:
             logger.error(f"Error starting Telegram bot: {e}")
@@ -57,14 +58,18 @@ class TelegramBotController:
     async def stop(self):
         """Stop the Telegram bot"""
         try:
+            # Send offline message first
+            await self.send_message("🦈 shark0locker is going offline. See you soon! 🦈")
+            
             if self.notification_task:
                 self.notification_task.cancel()
                 
             if self.app:
+                if self.app.updater:
+                    await self.app.updater.stop()
                 await self.app.stop()
                 await self.app.shutdown()
                 
-            await self.send_message("🦈 shark0locker is going offline. See you soon! 🦈")
             logger.info("Telegram bot stopped")
             
         except Exception as e:
