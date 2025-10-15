@@ -7,13 +7,18 @@ import logging
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 import signal
+import sys
+from pathlib import Path
 
-from ..api.tradelocker_client import TradeLockerClient
-from ..agents.scanner_agent import ScannerAgent
-from ..agents.analyzer_agent import AnalyzerAgent
-from ..agents.executor_agent import ExecutorAgent
-from ..agents.performance_monitor import PerformanceMonitor
-from ..config.settings import config
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from api.tradelocker_client import TradeLockerClient
+from agents.scanner_agent import ScannerAgent
+from agents.analyzer_agent import AnalyzerAgent
+from agents.executor_agent import ExecutorAgent
+from agents.performance_monitor import PerformanceMonitor
+from config.settings import config
 
 logger = logging.getLogger(__name__)
 

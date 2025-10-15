@@ -1,0 +1,95 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║    🦈  SHARK0LOCKER - DEMO MODE  🦈                          ║
+║                                                               ║
+║      ✅ FULLY FUNCTIONAL - SIMULATED TRADING ✅               ║
+║         (No real money - Safe to test)                       ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+        
+2025-10-15 11:34:38,184 - __main__ - INFO - Starting shark0locker in DEMO mode...
+📝 DEMO MODE:
+   - All Telegram commands work
+   - Trading is simulated (no real money)
+   - Perfect for testing and learning
+   - Starting balance: $1,000 (virtual)
+
+2025-10-15 11:34:38,184 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:34:38,184 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:34:38,184 - __main__ - INFO - [DEMO MODE] Connected to mock TradeLocker - Account: 1550788
+2025-10-15 11:34:38,285 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
+2025-10-15 11:34:38,285 - __main__ - INFO - ✅ Trading system initialized (DEMO MODE)
+2025-10-15 11:34:38,285 - __main__ - INFO - Starting Telegram bot...
+2025-10-15 11:34:38,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 11:34:38,844 - telegram.ext.Application - INFO - Application started
+2025-10-15 11:34:39,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 11:34:39,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:34:39,648 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
+2025-10-15 11:34:39,648 - __main__ - INFO - ✅ Telegram bot started
+
+======================================================================
+✅ SHARK0LOCKER DEMO MODE IS READY!
+======================================================================
+
+📱 Telegram Bot: @Elephant4Us_bot
+💼 Mode: DEMO (Simulated Trading)
+💰 Starting Balance: $1,000 (virtual)
+
+Available Telegram Commands:
+  /start    - ⚡ Start simulated trading
+  /stop     - 🛑 Stop trading
+  /status   - 📊 System status
+  /stats    - 📈 Performance stats
+  /balance  - 💰 Current balance (virtual)
+  /trades   - 📋 Recent trades
+  /closeall - 🚨 Close all positions
+
+🦈 System is LIVE in DEMO mode!
+📱 Send /start via Telegram to begin simulated trading
+
+💡 This is perfect for:
+   - Testing all features
+   - Learning how the system works
+   - Verifying Telegram integration
+   - No risk - all trades are simulated!
+
+Press Ctrl+C to shut down
+======================================================================
+
+2025-10-15 11:34:49,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:34:55,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:01,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 Starting shark0locker trading system... 🦈
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-3 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-3 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-4 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-5 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent PerformanceMonitor started
+2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 shark0locker is HUNTING! 🦈
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-1 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-2 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-3 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-1 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-2 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-3 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-4 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-5 ready for analysis
+2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-1 ready to execute
+2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-2 ready to execute
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - PerformanceMonitor monitoring performance
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Initial balance: $1000.00
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:01,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:35:06,027 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:11,028 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:11,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:16,029 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:21,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:21,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"

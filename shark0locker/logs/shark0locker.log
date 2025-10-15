@@ -1,0 +1,110 @@
+2025-10-15 11:33:10,208 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:10,211 - __main__ - ERROR - Fatal error: attempted relative import beyond top-level package
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 54, in main
+    from core.trading_system import TradingSystem
+  File "/workspace/shark0locker/core/trading_system.py", line 11, in <module>
+    from ..api.tradelocker_client import TradeLockerClient
+ImportError: attempted relative import beyond top-level package
+2025-10-15 11:33:10,212 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:10,212 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:33:26,573 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:26,884 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:33:26,884 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:33:27,710 - api.tradelocker_client - ERROR - Authentication failed: 
+2025-10-15 11:33:27,710 - api.tradelocker_client - ERROR - Authentication error: Auth failed: 
+2025-10-15 11:33:27,710 - __main__ - ERROR - Fatal error: Auth failed: 
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 61, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 62, in initialize
+    await self.api_client.connect()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 40, in connect
+    await self.authenticate()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 69, in authenticate
+    raise Exception(f"Auth failed: {error}")
+Exception: Auth failed: 
+2025-10-15 11:33:27,711 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:27,711 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:27,712 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:27,712 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:33:27,712 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:33:27,712 - __main__ - INFO - Trading system shut down
+2025-10-15 11:33:27,712 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:33:50,406 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:33:50,636 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:33:50,636 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:33:50,636 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://api.tradelocker.com/auth/jwt/token
+2025-10-15 11:33:50,636 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:33:51,367 - api.tradelocker_client - INFO - Authentication response status: 404
+2025-10-15 11:33:51,367 - api.tradelocker_client - INFO - Authentication response: 
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Authentication failed with status 404
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Response: 
+2025-10-15 11:33:51,367 - api.tradelocker_client - ERROR - Authentication error: Auth failed (HTTP 404): 
+2025-10-15 11:33:51,367 - __main__ - ERROR - Fatal error: Auth failed (HTTP 404): 
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_headless.py", line 61, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 62, in initialize
+    await self.api_client.connect()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 40, in connect
+    await self.authenticate()
+  File "/workspace/shark0locker/api/tradelocker_client.py", line 76, in authenticate
+    raise Exception(f"Auth failed (HTTP {response.status}): {response_text[:200]}")
+Exception: Auth failed (HTTP 404): 
+2025-10-15 11:33:51,369 - __main__ - INFO - Cleaning up...
+2025-10-15 11:33:51,369 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:51,369 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 11:33:51,369 - api.tradelocker_client - INFO - Disconnected from TradeLocker
+2025-10-15 11:33:51,369 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 11:33:51,369 - __main__ - INFO - Trading system shut down
+2025-10-15 11:33:51,369 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 11:34:38,184 - __main__ - INFO - Starting shark0locker in DEMO mode...
+2025-10-15 11:34:38,184 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:34:38,184 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:34:38,184 - __main__ - INFO - [DEMO MODE] Connected to mock TradeLocker - Account: 1550788
+2025-10-15 11:34:38,285 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
+2025-10-15 11:34:38,285 - __main__ - INFO - ✅ Trading system initialized (DEMO MODE)
+2025-10-15 11:34:38,285 - __main__ - INFO - Starting Telegram bot...
+2025-10-15 11:34:38,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 11:34:38,844 - telegram.ext.Application - INFO - Application started
+2025-10-15 11:34:39,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 11:34:39,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:34:39,648 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
+2025-10-15 11:34:39,648 - __main__ - INFO - ✅ Telegram bot started
+2025-10-15 11:34:49,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:34:55,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:01,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 Starting shark0locker trading system... 🦈
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-3 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-3 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-4 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-5 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-1 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-2 started
+2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent PerformanceMonitor started
+2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 shark0locker is HUNTING! 🦈
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-1 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-2 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-3 scanning 13 pairs
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-1 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-2 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-3 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-4 ready for analysis
+2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-5 ready for analysis
+2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-1 ready to execute
+2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-2 ready to execute
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - PerformanceMonitor monitoring performance
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Initial balance: $1000.00
+2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:01,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:35:06,027 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:11,028 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:11,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:16,029 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:21,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:21,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"

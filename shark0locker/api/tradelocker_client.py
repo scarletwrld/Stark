@@ -56,7 +56,14 @@ class TradeLockerClient:
                 "server": self.server
             }
             
+            logger.info(f"Authenticating to TradeLocker API: {url}")
+            logger.info(f"Email: {self.email}, Server: {self.server}")
+            
             async with self.session.post(url, json=payload) as response:
+                logger.info(f"Authentication response status: {response.status}")
+                response_text = await response.text()
+                logger.info(f"Authentication response: {response_text[:500]}")
+                
                 if response.status == 200:
                     data = await response.json()
                     self.access_token = data.get("accessToken")
@@ -64,9 +71,9 @@ class TradeLockerClient:
                     self.account_id = data.get("accNum", self.account_number)
                     logger.info("Authentication successful")
                 else:
-                    error = await response.text()
-                    logger.error(f"Authentication failed: {error}")
-                    raise Exception(f"Auth failed: {error}")
+                    logger.error(f"Authentication failed with status {response.status}")
+                    logger.error(f"Response: {response_text}")
+                    raise Exception(f"Auth failed (HTTP {response.status}): {response_text[:200]}")
         except Exception as e:
             logger.error(f"Authentication error: {e}")
             raise
