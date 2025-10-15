@@ -108,3 +108,53 @@ Exception: Auth failed (HTTP 404):
 2025-10-15 11:35:16,029 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
 2025-10-15 11:35:21,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
 2025-10-15 11:35:21,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:26,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:31,031 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:31,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:36,034 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:41,036 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:41,677 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:46,038 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:51,039 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:35:51,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:35:56,041 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:01,042 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:02,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:06,043 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:11,044 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:12,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:16,045 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:21,046 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:22,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:26,047 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:31,048 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:32,491 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:36,049 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:41,050 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:42,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:46,051 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:51,052 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:36:52,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:36:56,054 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:01,055 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:02,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:06,056 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:11,057 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:13,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:16,058 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:21,059 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:23,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:26,061 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:31,062 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:33,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:36,062 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:41,064 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:43,629 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:46,065 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:51,065 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:37:53,791 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:37:56,066 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:01,068 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:03,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:38:06,069 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
+2025-10-15 11:38:11,070 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
