@@ -53,10 +53,21 @@ class ExecutorAgent(BaseAgent):
                 self.update_stats(success=False)
                 
     async def execute_signal(self, signal: Dict[str, Any]) -> Dict[str, Any]:
-        """Execute a trading signal"""
+        """Execute a trading signal with trend reversal handling"""
         try:
             symbol = signal["symbol"]
             direction = signal["direction"]
+            reversal_detected = signal.get("reversal_detected", False)
+            
+            # TREND REVERSAL: Close opposite positions first!
+            if reversal_detected:
+                await self._close_opposite_positions(symbol, direction)
+                logger.info(f"🔄 REVERSAL TRADE: {symbol} switching to {direction.upper()}")
+            
+            # Check for existing positions in opposite direction
+            opposite_closed = await self._check_and_close_opposite(symbol, direction)
+            if opposite_closed > 0:
+                logger.info(f"🔄 Closed {opposite_closed} opposite positions for {symbol}")
             
             # Calculate position size (full port trading)
             position_size = await self.calculate_position_size(signal)
@@ -84,18 +95,72 @@ class ExecutorAgent(BaseAgent):
                     "stop_loss": signal.get("stop_loss"),
                     "take_profit": signal.get("take_profit"),
                     "win_probability": signal.get("win_probability"),
+                    "trend": signal.get("trend", "neutral"),
+                    "reversal": reversal_detected,
                     "entry_time": datetime.now(),
                     "executor": self.name
                 }
                 
                 self.trade_log.append(trade_record)
                 self.active_positions[order.get("orderId")] = trade_record
+                
+                if reversal_detected:
+                    logger.info(f"🦈 SHARK REVERSED: {symbol} now {direction.upper()} - Catching the new trend!")
             
             return order
             
         except Exception as e:
             logger.error(f"Execution error: {e}")
             return {"error": str(e)}
+            
+    async def _close_opposite_positions(self, symbol: str, new_direction: str):
+        """Close all positions in opposite direction for trend reversal"""
+        try:
+            positions_to_close = []
+            
+            for pos_id, trade in self.active_positions.items():
+                if trade["symbol"] == symbol:
+                    # If we're going long, close shorts. If going short, close longs.
+                    if (new_direction == "buy" and trade["direction"] == "sell") or \
+                       (new_direction == "sell" and trade["direction"] == "buy"):
+                        positions_to_close.append(pos_id)
+            
+            # Close all opposite positions
+            for pos_id in positions_to_close:
+                await self.api_client.close_position(pos_id)
+                trade = self.active_positions[pos_id]
+                trade["exit_time"] = datetime.now()
+                trade["status"] = "closed_reversal"
+                trade["exit_reason"] = "trend_reversal"
+                logger.info(f"🔄 Closed opposite {trade['direction']} position for reversal")
+                del self.active_positions[pos_id]
+                
+        except Exception as e:
+            logger.error(f"Error closing opposite positions: {e}")
+            
+    async def _check_and_close_opposite(self, symbol: str, direction: str) -> int:
+        """Check for and close any opposite direction positions"""
+        try:
+            open_positions = await self.api_client.get_open_positions()
+            closed_count = 0
+            
+            for position in open_positions:
+                pos_symbol = position.get("symbol")
+                pos_side = position.get("side", "").lower()
+                
+                # Close opposite positions
+                if pos_symbol == symbol:
+                    if (direction == "buy" and pos_side == "sell") or \
+                       (direction == "sell" and pos_side == "buy"):
+                        await self.api_client.close_position(position.get("id"))
+                        closed_count += 1
+                        logger.info(f"🔄 Closed opposite {pos_side} for new {direction}")
+            
+            return closed_count
+            
+        except Exception as e:
+            logger.error(f"Error checking opposite positions: {e}")
+            return 0
             
     async def calculate_position_size(self, signal: Dict[str, Any]) -> float:
         """Calculate optimal position size for full port trading"""
