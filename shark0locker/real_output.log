@@ -1,0 +1,59 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║    🦈  SHARK0LOCKER - REAL TRADING SYSTEM  🦈                ║
+║                                                               ║
+║         ⚠️  REAL MONEY - REAL TRADING - HEADLESS MODE ⚠️     ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+        
+2025-10-15 11:39:41,510 - __main__ - INFO - Starting shark0locker in headless mode...
+2025-10-15 11:39:41,724 - __main__ - INFO - Initializing trading system...
+2025-10-15 11:39:41,724 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 11:39:41,724 - api.tradelocker_client - INFO - Authenticating to TradeLocker API: https://demo.tradelocker.com/backend-api/auth/jwt/token
+2025-10-15 11:39:41,724 - api.tradelocker_client - INFO - Email: tiggysurf@gmail.com, Server: GATESFX
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - Authentication response status: 201
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - Authentication response: {"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0cmFkZWxvY2tlci1hcGkiLCJhdWQiOiJ0cmFkZWxvY2tlci1hcGktdHJhZGVycyIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJzdWIiOiJHQVRFU0ZYIzcyMGU2MjNjLTJkMGItNGQ1My04MDVkLTBkYzQ2ODk1OGNmMyIsInVpZCI6IjcyMGU2MjNjLTJkMGItNGQ1My04MDVkLTBkYzQ2ODk1OGNmMyIsImJyYW5kIjoiR0FURVNGWCIsImhvc3QiOiJic2IudHJhZGVsb2NrZXIuY29tIiwiZW1haWwiOiJ0aWdneXN1cmZAZ21haWwuY29tIiwiaWF0IjoxNzYwNTI4MzgyLCJleHAiOjE3NjA1MzE5ODJ9.h9OH2_4hRm2C1KKoHJwlj12TMarhzP3kUbPfLW-_6rpw4QuZk5eo5ZJF5o9LNb
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - ✅ Authentication successful! Account: 1550788
+2025-10-15 11:39:42,115 - api.tradelocker_client - INFO - Connected to TradeLocker - Account: 1550788
+2025-10-15 11:39:42,115 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
+2025-10-15 11:39:42,115 - __main__ - INFO - ✅ Trading system initialized
+2025-10-15 11:39:42,115 - __main__ - INFO - Starting Telegram bot...
+2025-10-15 11:39:42,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
+2025-10-15 11:39:42,666 - telegram.ext.Application - INFO - Application started
+2025-10-15 11:39:42,827 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-15 11:39:43,449 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
+2025-10-15 11:39:43,450 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
+2025-10-15 11:39:43,450 - __main__ - INFO - ✅ Telegram bot started
+
+======================================================================
+✅ SHARK0LOCKER IS READY FOR REAL TRADING!
+======================================================================
+
+📱 Telegram Bot: @Elephant4Us_bot
+🏦 TradeLocker Account: 1550788
+🌐 Server: GATESFX
+
+⚠️  IMPORTANT:
+   - Trading is NOT started yet
+   - Send /start via Telegram to begin REAL trading
+   - All updates will be sent via Telegram
+   - Logs: logs/shark0locker.log
+
+Available Telegram Commands:
+  /start    - ⚡ Start REAL trading
+  /stop     - 🛑 Stop trading
+  /status   - 📊 System status
+  /stats    - 📈 Performance
+  /balance  - 💰 Real balance
+  /trades   - 📋 Recent trades
+  /closeall - 🚨 Emergency exit
+
+🦈 System is LIVE and waiting for /start command...
+======================================================================
+
+2025-10-15 11:39:43,450 - __main__ - INFO - System ready. Waiting for commands via Telegram...
+2025-10-15 11:39:53,321 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:03,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:13,649 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
+2025-10-15 11:40:23,812 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"

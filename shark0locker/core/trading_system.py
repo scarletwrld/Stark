@@ -55,7 +55,8 @@ class TradingSystem:
             email=self.config.tradelocker.email,
             password=self.config.tradelocker.password,
             server=self.config.tradelocker.server,
-            account_number=self.config.tradelocker.account_number
+            account_number=self.config.tradelocker.account_number,
+            api_url=self.config.tradelocker.api_url
         )
         
         # Connect to TradeLocker

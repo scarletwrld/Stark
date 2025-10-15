@@ -14,12 +14,13 @@ logger = logging.getLogger(__name__)
 class TradeLockerClient:
     """TradeLocker API client with async support"""
     
-    def __init__(self, email: str, password: str, server: str, account_number: str):
+    def __init__(self, email: str, password: str, server: str, account_number: str, api_url: str = None):
         self.email = email
         self.password = password
         self.server = server
         self.account_number = account_number
-        self.base_url = "https://api.tradelocker.com"
+        # Use correct API URL for TradeLocker DEMO
+        self.base_url = api_url or "https://demo.tradelocker.com/backend-api"
         self.session: Optional[aiohttp.ClientSession] = None
         self.access_token: Optional[str] = None
         self.refresh_token: Optional[str] = None
@@ -64,12 +65,13 @@ class TradeLockerClient:
                 response_text = await response.text()
                 logger.info(f"Authentication response: {response_text[:500]}")
                 
-                if response.status == 200:
+                # TradeLocker returns 201 (Created) for successful auth
+                if response.status in [200, 201]:
                     data = await response.json()
                     self.access_token = data.get("accessToken")
                     self.refresh_token = data.get("refreshToken")
                     self.account_id = data.get("accNum", self.account_number)
-                    logger.info("Authentication successful")
+                    logger.info(f"✅ Authentication successful! Account: {self.account_id}")
                 else:
                     logger.error(f"Authentication failed with status {response.status}")
                     logger.error(f"Response: {response_text}")

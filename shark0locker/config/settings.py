@@ -13,7 +13,8 @@ class TradeLockerConfig:
     password: str = "!2e375iW"
     server: str = "GATESFX"
     currency: str = "USD"
-    api_url: str = "https://api.tradelocker.com"
+    # CORRECT API URL for TradeLocker DEMO
+    api_url: str = "https://demo.tradelocker.com/backend-api"
     
 @dataclass
 class TelegramConfig:
