@@ -8,186 +8,35 @@
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
         
-2025-10-15 11:34:38,184 - __main__ - INFO - Starting shark0locker in DEMO mode...
+2025-10-15 13:05:18,736 - __main__ - INFO - Starting shark0locker in DEMO mode...
 📝 DEMO MODE:
    - All Telegram commands work
    - Trading is simulated (no real money)
    - Perfect for testing and learning
    - Starting balance: $1,000 (virtual)
 
-2025-10-15 11:34:38,184 - __main__ - INFO - Initializing trading system...
-2025-10-15 11:34:38,184 - core.trading_system - INFO - Initializing shark0locker trading system...
-2025-10-15 11:34:38,184 - __main__ - INFO - [DEMO MODE] Connected to mock TradeLocker - Account: 1550788
-2025-10-15 11:34:38,285 - core.trading_system - INFO - Initialized 3 scanners, 5 analyzers, 2 executors
-2025-10-15 11:34:38,285 - __main__ - INFO - ✅ Trading system initialized (DEMO MODE)
-2025-10-15 11:34:38,285 - __main__ - INFO - Starting Telegram bot...
-2025-10-15 11:34:38,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getMe "HTTP/1.1 200 OK"
-2025-10-15 11:34:38,844 - telegram.ext.Application - INFO - Application started
-2025-10-15 11:34:39,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/deleteWebhook "HTTP/1.1 200 OK"
-2025-10-15 11:34:39,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
-2025-10-15 11:34:39,648 - utils.telegram_bot - INFO - Telegram bot started and polling for updates
-2025-10-15 11:34:39,648 - __main__ - INFO - ✅ Telegram bot started
-
-======================================================================
-✅ SHARK0LOCKER DEMO MODE IS READY!
-======================================================================
-
-📱 Telegram Bot: @Elephant4Us_bot
-💼 Mode: DEMO (Simulated Trading)
-💰 Starting Balance: $1,000 (virtual)
-
-Available Telegram Commands:
-  /start    - ⚡ Start simulated trading
-  /stop     - 🛑 Stop trading
-  /status   - 📊 System status
-  /stats    - 📈 Performance stats
-  /balance  - 💰 Current balance (virtual)
-  /trades   - 📋 Recent trades
-  /closeall - 🚨 Close all positions
-
-🦈 System is LIVE in DEMO mode!
-📱 Send /start via Telegram to begin simulated trading
-
-💡 This is perfect for:
-   - Testing all features
-   - Learning how the system works
-   - Verifying Telegram integration
-   - No risk - all trades are simulated!
-
-Press Ctrl+C to shut down
-======================================================================
-
-2025-10-15 11:34:49,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:34:55,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:01,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 Starting shark0locker trading system... 🦈
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-1 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-2 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Scanner-3 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-1 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-2 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-3 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-4 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Analyzer-5 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-1 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent Executor-2 started
-2025-10-15 11:35:01,025 - agents.base_agent - INFO - Agent PerformanceMonitor started
-2025-10-15 11:35:01,025 - core.trading_system - INFO - 🦈 shark0locker is HUNTING! 🦈
-2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-1 scanning 13 pairs
-2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-2 scanning 13 pairs
-2025-10-15 11:35:01,026 - agents.scanner_agent - INFO - Scanner-3 scanning 13 pairs
-2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-1 ready for analysis
-2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-2 ready for analysis
-2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-3 ready for analysis
-2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-4 ready for analysis
-2025-10-15 11:35:01,026 - agents.analyzer_agent - INFO - Analyzer-5 ready for analysis
-2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-1 ready to execute
-2025-10-15 11:35:01,026 - agents.executor_agent - INFO - Executor-2 ready to execute
-2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - PerformanceMonitor monitoring performance
-2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Initial balance: $1000.00
-2025-10-15 11:35:01,026 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:01,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
-2025-10-15 11:35:06,027 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:11,028 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:11,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:16,029 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:21,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:21,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:26,030 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:31,031 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:31,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:36,034 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:41,036 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:41,677 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:46,038 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:51,039 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:35:51,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:35:56,041 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:01,042 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:02,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:36:06,043 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:11,044 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:12,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:36:16,045 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:21,046 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:22,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:36:26,047 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:31,048 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:32,491 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:36:36,049 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:41,050 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:42,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:36:46,051 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:51,052 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:36:52,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:36:56,054 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:01,055 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:02,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:37:06,056 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:11,057 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:13,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:37:16,058 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:21,059 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:23,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:37:26,061 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:31,062 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:33,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:37:36,062 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:41,064 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:43,629 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:37:46,065 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:51,065 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:37:53,791 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:37:56,066 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:01,068 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:03,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:38:06,069 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:11,070 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:14,115 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:38:16,073 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:21,073 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:24,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:38:26,074 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:31,076 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:34,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:38:36,076 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:41,077 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:44,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:38:46,077 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:51,078 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:38:54,768 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:38:56,080 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:39:01,081 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:39:04,930 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:39:06,082 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:39:11,083 - agents.performance_monitor - INFO - Performance: Balance: $1000.00 | PNL: $0.00 (0.00%) | Trades: 0 | Win Rate: 0.00%
-2025-10-15 11:39:12,732 - __main__ - INFO - Received signal 2
-2025-10-15 11:39:12,733 - __main__ - INFO - 🛑 Initiating shutdown...
-2025-10-15 11:39:12,733 - __main__ - INFO - Cleaning up...
-2025-10-15 11:39:12,733 - core.trading_system - INFO - 🛑 Stopping shark0locker trading system... 🛑
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Scanner-1 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Scanner-2 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Scanner-3 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-1 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-2 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-3 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-4 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Analyzer-5 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Executor-1 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent Executor-2 stopped
-2025-10-15 11:39:12,733 - agents.base_agent - INFO - Agent PerformanceMonitor stopped
-2025-10-15 11:39:12,733 - __main__ - INFO - [DEMO MODE] Closed 0 positions
-2025-10-15 11:39:12,734 - core.trading_system - INFO - 🛑 shark0locker stopped 🛑
-2025-10-15 11:39:12,734 - core.trading_system - WARNING - Trading system is not running
-2025-10-15 11:39:12,734 - __main__ - INFO - [DEMO MODE] Disconnected
-2025-10-15 11:39:12,734 - core.trading_system - INFO - Trading system shutdown complete
-2025-10-15 11:39:12,734 - __main__ - INFO - Trading system shut down
-2025-10-15 11:39:13,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/sendMessage "HTTP/1.1 200 OK"
-2025-10-15 11:39:13,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8109433790:AAEf4tMrbNaoHOvkK43flFwgeN5zz2TeD60/getUpdates "HTTP/1.1 200 OK"
-2025-10-15 11:39:13,878 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
-2025-10-15 11:39:13,878 - telegram.ext.Application - INFO - Application.stop() complete
-2025-10-15 11:39:13,878 - utils.telegram_bot - INFO - Telegram bot stopped
-2025-10-15 11:39:13,878 - __main__ - INFO - Telegram bot stopped
-2025-10-15 11:39:13,878 - __main__ - INFO - ✅ Shutdown complete
+2025-10-15 13:05:18,736 - __main__ - INFO - Initializing trading system...
+2025-10-15 13:05:18,736 - core.trading_system - INFO - Initializing shark0locker trading system...
+2025-10-15 13:05:18,736 - __main__ - ERROR - Fatal error: MockTradeLockerClient.__init__() got an unexpected keyword argument 'api_url'
+Traceback (most recent call last):
+  File "/workspace/shark0locker/start_demo.py", line 157, in main
+    await trading_system.initialize()
+  File "/workspace/shark0locker/core/trading_system.py", line 54, in initialize
+    self.api_client = TradeLockerClient(
+                      ~~~~~~~~~~~~~~~~~^
+        email=self.config.tradelocker.email,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        api_url=self.config.tradelocker.api_url
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: MockTradeLockerClient.__init__() got an unexpected keyword argument 'api_url'
+2025-10-15 13:05:18,737 - __main__ - INFO - Cleaning up...
+2025-10-15 13:05:18,737 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:18,737 - core.trading_system - WARNING - Trading system is not running
+2025-10-15 13:05:18,737 - core.trading_system - INFO - Trading system shutdown complete
+2025-10-15 13:05:18,737 - __main__ - INFO - Trading system shut down
+2025-10-15 13:05:18,737 - __main__ - INFO - ✅ Shutdown complete
 
 ✅ shark0locker DEMO stopped

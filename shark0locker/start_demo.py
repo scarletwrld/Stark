@@ -27,10 +27,11 @@ logger = logging.getLogger(__name__)
 class MockTradeLockerClient:
     """Mock API client for demo mode"""
     
-    def __init__(self, email, password, server, account_number):
+    def __init__(self, email, password, server, account_number, api_url=None):
         self.email = email
         self.account_number = account_number
         self.server = server
+        self.api_url = api_url or "https://demo.mock.com"
         self.balance = 1000.00
         self.equity = 1000.00
         self.positions = []
